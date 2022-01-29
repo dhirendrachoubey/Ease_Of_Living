@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.nic.ease_of_living.gp.HouseholdData"
+    android:tag="tag_scrollview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/parentLayout"
+        android:tag="tag_parentlayout">
+
+        <!-- Header Starts-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/add_gp_header"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Header Ends-->
+
+        <!-- Location Parameters layout Starts-->
+        <LinearLayout
+            android:id="@+id/llLocationParameters"
+            android:tag="@string/tag_ll_locationParameters"
+
+            style="@style/linearLayoutHorizontal1">
+
+            <ImageView
+                android:id="@+id/ivLocationParameters"
+                android:tag="@string/tag_iv_locationParameters"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_minus"/>
+            <TextView
+                style="@style/textView3"
+                android:text="@string/location_parameters"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLocationParametersDetails"
+            android:tag="@string/tag_ll_locationParametersDetails"
+
+            style="@style/linearLayoutVertical1">
+
+            <TextView
+                android:id="@+id/tvState"
+                android:tag="@string/tag_tv_state"
+
+                style="@style/textView1"
+                android:text="@string/state"
+                />
+
+            <TextView
+                android:id="@+id/tvStateData"
+                android:tag="@string/tag_tv_stateData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/state"
+                />
+
+            <TextView
+                android:id="@+id/tvDistrict"
+                android:tag="@string/tag_tv_district"
+
+                style="@style/textView1"
+                android:text="@string/district"
+                />
+
+            <TextView
+                android:id="@+id/tvDistrictData"
+                android:tag="@string/tag_tv_districtData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/district"
+                />
+
+            <TextView
+                android:id="@+id/tvBlock"
+                android:tag="@string/tag_tv_block"
+
+                style="@style/textView1"
+                android:text="@string/dev_block"
+                />
+
+            <TextView
+                android:id="@+id/tvBlockData"
+                android:tag="@string/tag_tv_blockData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/dev_block"
+                />
+
+            <TextView
+                android:id="@+id/tvGp"
+                android:tag="@string/tag_tv_gp"
+                style="@style/textView1"
+                android:text="@string/gram_panchayat"
+                />
+
+            <TextView
+                android:id="@+id/tvGpData"
+                android:tag="@string/tag_tv_gpData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/gram_panchayat"
+                />
+
+            <TextView
+                android:id="@+id/tvVillage"
+                android:tag="@string/tag_tv_village"
+
+                style="@style/textView1"
+                android:text="@string/village"
+                />
+
+            <TextView
+                android:id="@+id/tvVillageData"
+                android:tag="@string/tag_tv_villageData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/village"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tvEb"
+                android:tag="@string/tag_tv_eb"
+
+                style="@style/textView1"
+                android:text="@string/eb"
+                />
+
+            <TextView
+                android:id="@+id/tvEbData"
+                android:tag="@string/tag_tv_ebData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/eb"
+                />
+
+
+
+
+
+            <!-- Submit and Proceed Button-->
+            <LinearLayout
+                android:id="@+id/llSubmitSectionLocParam"
+                android:tag="@string/tag_ll_submitSectionLocParam"
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="right"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/btnSaveProceedSectionLocParam"
+                    android:tag="@string/tag_btn_saveProceedSectionLocParam"
+                    style="@style/buttonSaveAndProceed"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/textViewGreyLine"/>
+        <!-- Location Parameters layout Ends-->
+
+        <!-- Form Layout starts-->
+        <LinearLayout
+            android:id="@+id/llFormDetails"
+            android:tag="@string/tag_ll_formDetails"
+
+            style="@style/linearLayoutVertical1">
+
+            <!-- Household particulars Starts-->
+            <LinearLayout
+                android:id="@+id/llHouseholdParticulars"
+                android:tag="@string/tag_ll_householdParticulars"
+
+                style="@style/linearLayoutHorizontal1">
+
+                <ImageView
+                    android:id="@+id/ivHouseholdParticulars"
+                    android:tag="@string/tag_iv_householdParticulars"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_plus"/>
+                <TextView
+                    style="@style/textView3"
+                    android:text="@string/household_particulars"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHouseholdParticularsDetails"
+                android:tag="@string/tag_ll_householdParticularsDetails"
+
+                style="@style/linearLayoutVertical2">
+
+                <!--Avilability of LPG gas connection-->
+                <TextView
+                    android:id="@+id/tvAvailabilityOfLpgConnection"
+                    android:tag="@string/tag_tv_availabilityOfLpgConnection"
+
+                    android:text="@string/is_lpg_connection_available"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+                    <Spinner
+                            android:id="@+id/spinnerLpgConnectionAvailability"
+                            android:tag="@string/tag_spinner_lpgConnectionAvailability"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAvailabilityOfLpgConnectionYes"
+                        android:tag="@string/tag_ll_availabilityOfLpgConnectionYes"
+                        style="@style/linearLayoutVertical2">
+
+                        <TextView
+                            android:id="@+id/tvLpgConsumerId"
+                            android:tag="@string/tag_tv_lpgConsumerId"
+
+                            android:text="@string/lpg_consumer_id"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etLpgConsumerId"
+                            android:tag="@string/tag_et_lpgConsumerId"
+
+                            style="@style/editText1"
+                            android:hint="@string/lpg_consumer_id"
+                            android:inputType="text"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvCylinderRefillFrequency"
+                            android:tag="@string/tag_tv_cylinderRefillFrequency"
+
+                            android:text="@string/no_of_times_refilled_in_last_one_yr"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etCylinderRefillFrequency"
+                            android:tag="@string/tag_et_cylinderRefillFrequency"
+
+                            style="@style/editText1"
+                            android:hint="@string/no_of_times_refilled_in_last_one_yr"
+                            android:inputType="number"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAvailabilityOfLpgConnectionNo"
+                        android:tag="@string/tag_ll_availabilityOfLpgConnectionNo"
+                        style="@style/linearLayoutVertical2">
+
+                        <TextView
+                            android:id="@+id/tvLpgGasConnectionApplied"
+                            android:tag="@string/tag_tv_lpgGasConnectionApplied"
+                            android:text="@string/lpg_gas_connection_applied"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerLpgGasConnectionApplied"
+                                android:tag="@string/tag_spinner_lpgGasConnectionApplied"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                <!--Avilability of electricity connection-->
+                <TextView
+                    android:id="@+id/tvAvailabilityOfElectricityConnection"
+                    android:tag="@string/tag_tv_availabilityOfElectricityConnection"
+
+                    android:text="@string/is_electricity_connection_available"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                        <RadioGroup
+                            android:id="@+id/rgAvailabilityOfElectricityConnection"
+                            android:tag="@string/tag_rg_availabilityOfElectricityConnection"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:id="@+id/rbAvailabilityOfElectricityConnectionYes"
+                                android:tag="@string/tag_rb_availabilityOfElectricityConnectionYes"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/yes"
+                                android:layout_weight="1"
+                                />
+                            <RadioButton
+                                android:id="@+id/rbAvailabilityOfElectricityConnectionNo"
+                                android:tag="@string/tag_rb_availabilityOfElectricityConnectionNo"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/no"
+                                android:layout_weight="1"/>
+
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:id="@+id/llAvailabilityOfElectricityConnectionYes"
+                            android:tag="@string/tag_ll_availabilityOfElectricityConnectionYes"
+                            style="@style/linearLayoutVertical2">
+
+                            <!-- If Yes, whether the household has LED Bulbs under UJALA yojana  -->
+                            <TextView
+                                android:id="@+id/tvAvailabilityOfLedBulbsUjala"
+                                android:tag="@string/tag_tv_availabilityOfLedBulbsUjala"
+
+                                android:text="@string/is_led_available_under_ujala"
+                                style="@style/textView1"
+                                />
+
+                            <LinearLayout
+                               style="@style/linearLayoutVertical3WithMarginBottom">
+
+                                <Spinner
+                                    android:id="@+id/spinnerAvailabilityOfLedBulbsUjala"
+                                    android:tag="@string/tag_spinner_availabilityOfLedBulbsUjala"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <!--Does any member of the household have PM Jan Dhan Account ?-->
+                <TextView
+                    android:id="@+id/tvAvailabilityOfPmJanDhanAccount"
+                    android:tag="@string/tag_tv_availabilityOfPmJanDhanAccount"
+
+                    android:text="@string/is_any_member_have_jandhan_ac"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerAvailabilityOfPmJanDhanAccount"
+                        android:tag="@string/tag_spinner_availabilityOfPmJanDhanAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                    </LinearLayout>
+
+                <!--Whether the household is enrolled under PM Jeevan Jyoti Bima Yojana ?-->
+                <TextView
+                    android:id="@+id/tvWhetherHhdHasInsuranceCover"
+                    android:tag="@string/tag_tv_WhetherHhdHasInsuranceCover"
+                    android:text="@string/whether_hhd_has_insurance_cover"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherHhdHasInsuranceCover"
+                        android:tag="@string/tag_spinner_WhetherHhdHasInsuranceCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    </LinearLayout>
+
+                <!--Whether any member of the household is enrolled under PM Suraksha Bima Yojana ?-->
+                <TextView
+                    android:id="@+id/tvWhetherHhdHasAccidentalInsuranceCover"
+                    android:tag="@string/tag_tv_WhetherHhdHasAccidentalInsuranceCover"
+                    android:text="@string/whether_hhd_has_accidental_insurance_cover"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherHhdHasAccidentalInsuranceCover"
+                        android:tag="@string/tag_spinner_whetherHhdHasAccidentalInsuranceCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    </LinearLayout>
+
+                <!--whether any member of the household has been immunised under Mission Indra-Dhanush ?-->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberOfHhdImmunised"
+                    android:tag="@string/tag_tv_whetherAnyMemberOfHhdImmunised"
+                    android:text="@string/whether_any_member_of_hhd_immunised"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherAnyMemberOfHhdImmunised"
+                        android:tag="@string/tag_spinner_whetherAnyMemberOfHhdImmunised"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+
+                </LinearLayout>
+
+                <!--Is there any child (0-6 yrs.) or pregnant woman available in the household ?-->
+                <TextView
+                    android:id="@+id/tvAnyChild0To6OrPregnantWomanAvailable"
+                    android:tag="@string/tag_tv_anyChild0To6OrPregnantWomanAvailable"
+                    android:text="@string/is_any_child_0_6_yrs_or_pregnant_woman_available"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                        <RadioGroup
+                            android:id="@+id/rgAnyChild0To6OrPregnantWomanAvailable"
+                            android:tag="@string/tag_rg_anyChild0To6OrPregnantWomanAvailable"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:id="@+id/rbAnyChild0To6OrPregnantWomanAvailableYes"
+                                android:tag="@string/tag_rb_anyChild0To6OrPregnantWomanAvailableYes"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/yes"
+                                android:layout_weight="1"
+                                />
+                            <RadioButton
+                                android:id="@+id/rbAnyChild0To6OrPregnantWomanAvailableNo"
+                                android:tag="@string/tag_rb_anyChild0To6OrPregnantWomanAvailableNo"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/no"
+                                android:layout_weight="1"/>
+
+                        </RadioGroup>
+
+
+                    <LinearLayout
+                        android:id="@+id/llAnyChild0To6OrPregnantWomanAvailableYes"
+                        android:tag="@string/tag_ll_AnyChild0To6OrPregnantWomanAvailableYes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If yes, whether any member of the household registered in ICDS ?-->
+                        <TextView
+                            android:id="@+id/tvWhetherNutritionSupplementServicesAvailed"
+                            android:tag="@string/tag_tv_whetherNutritionSupplementServicesAvailed"
+                            android:text="@string/whether_nutrition_supplement_services_availed"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerWhetherNutritionSupplementServicesAvailed"
+                                android:tag="@string/tag_spinner_whetherNutritionSupplementServicesAvailed"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvWhetherHealthServicesAvailed"
+                            android:tag="@string/tag_tv_whetherHealthServicesAvailed"
+                            android:text="@string/whether_health_services_availed"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerWhetherHealthServicesAvailed"
+                                android:tag="@string/tag_spinner_whetherHealthServicesAvailed"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvWhetherPreSchoolEducationServicesAvailed"
+                            android:tag="@string/tag_tv_whetherPreSchoolEducationServicesAvailed"
+                            android:text="@string/whether_pre_school_education_services_availed"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerWhetherPreSchoolEducationServicesAvailed"
+                                android:tag="@string/tag_spinner_whetherPreSchoolEducationServicesAvailed"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberOfHhdMemberOfShg"
+                    android:tag="@string/tag_tv_whetherAnyMemberOfHhdMemberOfShg"
+                    android:text="@string/whether_any_member_of_hhd_is_member_of_shg"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+                    <Spinner
+                        android:id="@+id/spinnerWhetherAnyMemberOfHhdMemberOfShg"
+                        android:tag="@string/tag_spinner_whetherAnyMemberOfHhdMemberOfShg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    </LinearLayout>
+
+                <!--What is the type of House used by the household for living?-->
+                <TextView
+                    android:id="@+id/tvHouseholdType"
+                    android:tag="@string/tag_tv_householdType"
+                    android:text="@string/type_of_house_used_for_living"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                        style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerHouseholdType"
+                        android:tag="@string/tag_spinner_householdType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+
+                <!--Whether the household is a beneficiary of the Pradhan Mantri Awaas Yojana - Gramin ? -->
+                <TextView
+                    android:id="@+id/tvWhetherHhdBeneficiaryOfGovthousing"
+                    android:tag="@string/tag_tv_whetherHhdBeneficiaryOfGovthousing"
+                    android:text="@string/whether_hhd_beneficiary_of_govthousing"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherHhdBeneficiaryOfGovthousing"
+                        android:tag="@string/tag_spinner_whetherHhdBeneficiaryOfGovthousing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherBeneficiaryOfPmayGYes"
+                        android:tag="@string/tag_ll_whetherBeneficiaryOfPmayGYes"
+
+                        style="@style/linearLayoutVertical2">
+
+                        <TextView
+                            android:id="@+id/tvPmayGId"
+                            android:tag="@string/tag_tv_pmayg_id"
+                            android:text="@string/pmayg_id"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etPmayGId"
+                            android:tag="@string/tag_et_pmayg_id"
+                            style="@style/editText1"
+                            android:hint="@string/pmayg_id"
+                            android:inputType="text"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherBeneficiaryOfPmayGNo"
+                        android:tag="@string/tag_ll_whetherBeneficiaryOfPmayGNo"
+                        style="@style/linearLayoutVertical2">
+                        <TextView
+                            android:id="@+id/tvWhetherHhdBeneficiaryOfGovthousingNo"
+                            android:tag="@string/tag_tv_whetherHhdBeneficiaryOfGovthousingNo"
+                            android:text="@string/whether_hhd_beneficiary_of_govthousing_no"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerWhetherHhdBeneficiaryOfGovthousingNo"
+                                android:tag="@string/tag_spinner_whetherHhdBeneficiaryOfGovthousingNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                <!--Whether the household has been issued E-health card under Ayushman Bharat Pradhan Mantri Jan Arogya Yojana -->
+                <TextView
+                    android:id="@+id/tvWhetherHhdRegisteredHealthScheme"
+                    android:tag="@string/tag_tv_WhetherHhdRegisteredHealthScheme"
+                    android:text="@string/whether_hhd_registered_health_scheme"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherHhdRegisteredHealthScheme"
+                        android:tag="@string/tag_spinner_WhetherHhdRegisteredHealthScheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherIssuedEHealthCardUnderAbPmjayYes"
+                        android:tag="@string/tag_ll_whether_issued_ehealth_card_under_abpmjay_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If Yes, please enter family Health card Number -->
+                        <TextView
+                            android:id="@+id/tvFamilyHealthCardNo"
+                            android:tag="@string/tag_tv_family_health_card_no"
+                            android:text="@string/family_health_card_number"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etFamilyHealthCardNo"
+                            android:tag="@string/tag_et_family_health_card_no"
+                            style="@style/editText1"
+                            android:hint="@string/family_health_card_number"
+                            android:inputType="text"
+                            />
+
+                    </LinearLayout>
+
+
+
+                <!--Whether any member of the household is getting pension under NSAP-National Social Assistance Program  -->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberGettingPensionNsap"
+                    android:tag="@string/tag_tv_whether_any_member_getting_pension_nsap"
+                    android:text="@string/is_any_member_getting_pension_under_nsap"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <CheckBox
+                        android:id="@+id/chkOldAge"
+                        android:tag="@string/tag_chkOldAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/old_age"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkWidow"
+                        android:tag="@string/tag_chkWidow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/widow"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkDisability"
+                        android:tag="@string/tag_chkDisability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disability"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/chkNone"
+                        android:tag="@string/tag_chkNone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/none"
+                        />
+                </LinearLayout>
+                <!--Whether  Select the pension scheme -->
+                <LinearLayout
+                    android:id="@+id/llWhetherOldAgeSelectSchemeYes"
+                    android:tag="@string/tag_ll_WhetherOldAgeSelectSchemeYes"
+                    style="@style/linearLayoutVertical2">
+
+                 <TextView
+                            android:id="@+id/tvWhetherOldAgeSelectScheme"
+                            android:tag="@string/tag_tv_whetherOldAgeSelectScheme"
+                            android:text="@string/whether_old_age_select_scheme"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerWhetherOldAgeSelectScheme"
+                                android:tag="@string/tag_spinner_whetherOldAgeSelectScheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+                        </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llWhetherWidowAgeSelectSchemeYes"
+                    android:tag="@string/tag_ll_WhetherWidowAgeSelectSchemeYes"
+                    style="@style/linearLayoutVertical2">
+                <TextView
+                    android:id="@+id/tvWhetherWidowAgeSelectScheme"
+                    android:tag="@string/tag_tv_whetherWidowAgeSelectScheme"
+                    android:text="@string/whether_widow_age_select_scheme"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherWidowAgeSelectScheme"
+                        android:tag="@string/tag_spinner_whetherWidowAgeSelectScheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWhetherDisabilitySelectSchemeYes"
+                    android:tag="@string/tag_ll_WhetherDisabilitySelectSchemeYes"
+                    style="@style/linearLayoutVertical2">
+                <TextView
+                    android:id="@+id/tvWhetherDisabilitySelectScheme"
+                    android:tag="@string/tag_tv_whetherDisabilityAgeSelectScheme"
+                    android:text="@string/whether_disability_age_select_scheme"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherDisabilitySelectScheme"
+                        android:tag="@string/tag_spinner_whetherDisabilityAgeSelectScheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <!-- -Whether  Select the pension scheme-->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberWorkedWithMgnrega"
+                    android:tag="@string/tag_tv_whether_any_member_wotked_with_mgnrega"
+                    android:text="@string/is_any_member_ever_worked_under_mgnrega"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <RadioGroup
+                        android:id="@+id/rgWhetherAnyMemberWorkedWithMgnrega"
+                        android:tag="@string/tag_rg_whether_any_member_worked_with_mgnrega"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/rbWhetherAnyMemberWorkedWithMgnregaYes"
+                            android:tag="@string/tag_rb_whether_any_member_worked_with_mgnrega_yes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/yes"
+                            android:layout_weight="1"
+                            />
+                        <RadioButton
+                            android:id="@+id/rbWhetherAnyMemberWorkedWithMgnregaNo"
+                            android:tag="@string/tag_rb_whether_any_member_worked_with_mgnrega_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/no"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherAnyMemberWorkedWithMgnregaYes"
+                        android:tag="@string/tag_ll_whether_any_member_worked_with_mgnrega_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If Yes, then provide  MGNREGA job card number -->
+                        <TextView
+                            android:id="@+id/tvMgnregaJobCardNo"
+                            android:tag="@string/tag_tv_mgnrega_job_card_no"
+                            android:text="@string/mgnrega_job_card_number"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etMgnregaJobCardNo"
+                            android:tag="@string/tag_et_mgnrega_job_card_no"
+                            style="@style/editText1"
+                            android:hint="@string/mgnrega_job_card_number"
+                            android:inputType="text"
+                            />
+
+                        <!--If Yes, number of days worked under MGNREGA during last one year-->
+                        <TextView
+                            android:id="@+id/tvNoDaysWorkedWithMgnregaInLastYear"
+                            android:tag="@string/tag_tv_no_days_worked_with_mgnrega_last_year"
+                            android:text="@string/no_of_days_worked_under_mgnrega_in_last_one_yr"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etNoDaysWorkedWithMgnregaInLastYear"
+                            android:tag="@string/tag_et_no_days_worked_with_mgnrega_last_year"
+                            style="@style/editText1"
+                            android:hint="@string/no_of_days_worked_under_mgnrega_in_last_one_yr"
+                            android:inputType="number"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherAnyMemberWorkedWithMgnregaNo"
+                        android:tag="@string/tag_ll_whether_any_member_worked_with_mgnrega_no"
+                        style="@style/linearLayoutVertical2">
+
+                        <TextView
+                            android:id="@+id/tvWhetherAnyMemberWorkedWithMgnregaNo"
+                            android:tag="@string/tag_tv_WhetherAnyMemberWorkedWithMgnregaNo"
+                            android:text="@string/whether_any_member_worked_with_mgnrega_no"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+
+                            <Spinner
+                                android:id="@+id/spinnerWhetherAnyMemberWorkedWithMgnregaNo"
+                                android:tag="@string/tag_spinner_WhetherAnyMemberWorkedWithMgnregaNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <!--Whether any member of the household undergone training under any Skill development/orientation scheme ?  -->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberUndergoneTrainingInSkillDevScheme"
+                    android:tag="@string/tag_tv_whether_any_member_undergone_training_under_skill_dev_scheme"
+                    android:text="@string/is_any_member_undergone_training_under_any_skill_dev_prog"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <RadioGroup
+                        android:id="@+id/rgWhetherAnyMemberUndergoneTrainingInSkillDevScheme"
+                        android:tag="@string/tag_rg_whether_any_member_undergone_training_under_skill_dev_scheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/rbWhetherAnyMemberUndergoneTrainingInSkillDevSchemeYes"
+                            android:tag="@string/tag_rb_whether_any_member_undergone_training_under_skill_dev_scheme_yes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/yes"
+                            android:layout_weight="1"
+                            />
+                        <RadioButton
+                            android:id="@+id/rbWhetherAnyMemberUndergoneTrainingInSkillDevSchemeNo"
+                            android:tag="@string/tag_rb_whether_any_member_undergone_training_under_skill_dev_scheme_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/no"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherAnyMemberUndergoneTrainingInSkillDevSchemeYes"
+                        android:tag="@string/tag_ll_whether_any_member_undergone_training_under_skill_dev_scheme_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If yes, please select the scheme type -->
+                        <TextView
+                            android:id="@+id/tvSkillDevSchemeType"
+                            android:tag="@string/tag_tv_skill_dev_scheme_type"
+                            android:text="@string/type_of_scheme"
+                            style="@style/textView1"
+                            />
+
+                        <LinearLayout
+                            style="@style/linearLayoutVertical3WithMarginBottom">
+                            <CheckBox
+                                android:id="@+id/idDdugky"
+                                android:tag="@string/tag_chkDDUGKY"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ddugky"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/idPmkvy"
+                                android:tag="@string/tag_chkPMKVY"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pmkvy"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/idPmegp"
+                                android:tag="@string/tag_chkPMEGP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pmegp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/idAnyOther"
+                                android:tag="@string/tag_chkAnyOther"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/any_other"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/idNo"
+                                android:tag="@string/tag_chkNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Whether household has a functional toilets -->
+
+                <TextView
+                    android:id="@+id/tvWhetherHouseHoldHasFunctionalToilets"
+                    android:tag="@string/tag_tv_Whethere_household_has_functional_toilets"
+                    android:text="@string/is_hhd_available_a_functional_toilet"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <RadioGroup
+                        android:id="@+id/rgWhetherHouseHoldHasFunctionalToilets"
+                        android:tag="@string/tag_rg_Whethere_household_has_functional_toilets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        >
+                        <RadioButton
+                            android:id="@+id/rbWhetherHouseHoldhasFunctionalToiletsYes"
+                            android:tag="@string/tag_rb_Whethere_household_has_functional_toilets_yes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/yes"
+                            android:layout_weight="1"
+                            />
+                        <RadioButton
+                            android:id="@+id/rbWhetherHouseHoldhasFunctionalToiletsNo"
+                            android:tag="@string/tag_rb_Whether_house_hold_has_functional_toilets_No"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/no"
+                            android:layout_weight="1"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!--Please provide the Mobile Number(s) of HH members -->
+
+                <TextView
+                    android:id="@+id/tvHouseHoldMobileNo"
+                    android:tag="@string/tag_tv_house_hold_mobile_no"
+                    android:text="@string/mobile_numbers_hhd_members"
+                    style="@style/textView1"
+                    />
+
+                <EditText
+                    android:id="@+id/etHouseHoldMobileNo"
+                    android:tag="@string/tag_et_house_hold_mobile_no"
+                    style="@style/editText1"
+                    android:hint="@string/mobile_numbers_hhd_members"
+                    android:inputType="text"
+                    />
+
+
+                <!--Whether household availing ration under NFSA scheme -->
+
+                <TextView
+                    android:id="@+id/tvMobileNoBelogsTo"
+                    android:tag="@string/tag_tv_MobileNoBelogsTo"
+                    android:text="@string/mobile_no_belogs_to"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnereMobileNoBelogsTo"
+                        android:tag="@string/tag_spinner_MobileNoBelogsTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/tvWhetherHouseHoldAvailingRationNFSAScheme"
+                    android:tag="@string/tag_tv_Whether_house_hold_availing_ration_nfsa_scheme"
+                    android:text="@string/is_hhd_availing_ration_under_nfsa_scheme"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerWhetherHouseHoldAvailingRationNFSAScheme"
+                        android:tag="@string/tag_spinner_WhetherHouseHoldAvailingRationNFSAScheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/l1WhetherHouseHoldHasNFSASchemeYes"
+                        android:tag="@string/tag_l1_Whether_house_hold_nfsa_scheme_Yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If Yes, please enter nfsa ration card no -->
+                        <TextView
+                            android:id="@+id/tvNfsaRationCardNo"
+                            android:tag="@string/tag_tv_nfsa_ration_card_no"
+                            android:text="@string/provide_ration_card_number"
+                            style="@style/textView1"
+                            />
+
+                        <EditText
+                            android:id="@+id/etNfsaRationCardNo"
+                            android:tag="@string/tag_et_nfsa_ration_card_no"
+                            style="@style/editText1"
+                            android:hint="@string/provide_ration_card_number"
+                            android:inputType="text"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            <!-- Submit and Proceed Button-->
+                <LinearLayout
+                    android:id="@+id/llSubmitSectionA_1"
+                    android:tag="@string/tag_ll_submitSectionA_1"
+                    style="@style/linearLayoutHorizontal1"
+                    android:gravity="right"
+                    android:visibility="gone"
+                    >
+
+                    <Button
+                        android:id="@+id/btnSaveProceedSectionA_1"
+                        android:tag="@string/tag_btn_saveProceedSectionA_1"
+
+                        style="@style/buttonSaveAndProceed"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Household particulars layout Ends-->
+
+
+
+            <!-- Submit button -->
+            <LinearLayout
+                android:id="@+id/llSubmitBtn"
+                android:tag="@string/tag_ll_submitBtn"
+                style="@style/linearLayoutHorizontal1"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnSaveDraftGp"
+                    android:tag="@string/tag_btn_saveDraftGp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@color/colorAccent"
+                    android:text="@string/save_draft"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:id="@+id/btnSubmitGpData"
+                    android:tag="@string/tag_btn_submitGpData"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@color/colorAccent"
+                    android:text="@string/submit"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>

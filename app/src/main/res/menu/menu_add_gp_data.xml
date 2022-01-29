@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.nic.census2020">
+
+
+    <item
+        android:id="@+id/action_internet_status"
+        android:icon="@mipmap/icon_online_status"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/empty"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@mipmap/icon_overflow_menu">
+          <menu>
+
+                <item
+                    android:id="@+id/action_home"
+                    android:icon="@mipmap/icon_home"
+                    android:orderInCategory="96"
+                    app:showAsAction="never"
+                    android:title="Home" />
+
+                  <item
+                      android:id="@+id/action_logout"
+                      android:icon="@mipmap/icon_logout"
+                      android:orderInCategory="99"
+                      app:showAsAction="never"
+                      android:title="Logout" />
+            </menu>
+
+     </item>
+
+</menu>

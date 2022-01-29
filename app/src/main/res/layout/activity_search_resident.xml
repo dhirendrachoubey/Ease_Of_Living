@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.5">
+
+            <TextView
+                android:id="@+id/tvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/search_using"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/icon_arrow_up" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/et_style"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="left|center"
+                android:text="@string/search_using"
+                android:textColor="@color/colorPrimary"/>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_below="@+id/ivClose"
+                android:background="@drawable/et_style">
+                <RadioButton
+                    android:id="@+id/rbByHhdId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textColor="@color/black"
+                    android:text="@string/search_by_hhd_id"/>
+                <RadioButton
+                    android:id="@+id/rbByName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:text="@string/advanced_search"/>
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llTvByName"
+                style="@style/linearLayoutVertical2">
+
+                <LinearLayout
+                    style="@style/linearLayoutHorizontal1"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/tvNameSearch"
+                        style="@style/textView1"
+                        android:layout_weight="1"
+                        android:text="@string/name"
+                        android:textColor="@color/blue"/>
+
+                    <EditText
+                        android:id="@+id/etNameSearch"
+                        style="@style/editText1"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="@string/name"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linearLayoutHorizontal1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvFatherNameSearch"
+                        style="@style/textView1"
+                        android:layout_weight="1"
+                        android:text="@string/fathername"
+                        android:textColor="@color/blue"/>
+
+                    <EditText
+                        android:id="@+id/etFatherNameSearch"
+                        style="@style/editText1"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="@string/fathername"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linearLayoutHorizontal1">
+
+                    <TextView
+                        android:id="@+id/tvMotherNameSearch"
+                        style="@style/textView1"
+                        android:layout_weight="1"
+                        android:text="@string/mothername"
+                        android:textColor="@color/blue"/>
+
+                    <EditText
+                        android:id="@+id/etMotherNameSearch"
+                        style="@style/editText1"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:hint="@string/mothername"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/linearLayoutHorizontal1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvYobSearch"
+                        style="@style/textView1"
+                        android:layout_weight="1"
+                        android:text="@string/yob"
+                        android:textColor="@color/blue" />
+
+                    <LinearLayout
+                        style="@style/linearLayoutVertical3"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:id="@+id/spinnerYob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:prompt="@string/yob" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTvByHhdId"
+                style="@style/linearLayoutVertical1">
+
+                <LinearLayout
+                    style="@style/linearLayoutHorizontal1"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tvHhdIdSearch"
+                        style="@style/textView1"
+                        android:layout_weight="1"
+                        android:text="@string/hhd_id"
+                        android:textColor="@color/blue"/>
+
+                    <EditText
+                        android:id="@+id/etHhdIdSearch"
+                        style="@style/editText1"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="@string/hhd_id"
+
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    style="@style/buttonBlue"
+                    android:text="@string/search"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTotalSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center"
+                android:text=""
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/rgOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTotalSearch"
+                android:background="@drawable/et_style"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/rbPendingHousehold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/pending_household"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbSkipHousehold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="@string/skipped_household"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbSearchPop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/population"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSearchResident"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/activity_margin_content"
+                android:paddingTop="@dimen/activity_margin_content"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>

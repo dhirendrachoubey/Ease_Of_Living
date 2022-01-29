@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="in.nic.ease_of_living.gp.HouseholdData"
+    android:tag="tag_scrollview">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/parentLayout"
+        android:tag="tag_parentlayout">
+
+        <!-- Header Starts-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/add_gp_header"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Header Ends-->
+
+        <!-- Location Parameters layout Starts-->
+        <LinearLayout
+            android:id="@+id/llLocationParameters"
+            android:tag="@string/tag_ll_locationParameters"
+
+            style="@style/linearLayoutHorizontal1">
+
+            <ImageView
+                android:id="@+id/ivLocationParameters"
+                android:tag="@string/tag_iv_locationParameters"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_minus"/>
+            <TextView
+                style="@style/textView3"
+                android:text="@string/location_parameters"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLocationParametersDetails"
+            android:tag="@string/tag_ll_locationParametersDetails"
+
+            style="@style/linearLayoutVertical1">
+
+            <TextView
+                android:id="@+id/tvState"
+                android:tag="@string/tag_tv_state"
+
+                style="@style/textView1"
+                android:text="@string/state"
+                />
+
+            <TextView
+                android:id="@+id/tvStateData"
+                android:tag="@string/tag_tv_stateData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/state"
+                />
+
+            <TextView
+                android:id="@+id/tvDistrict"
+                android:tag="@string/tag_tv_district"
+
+                style="@style/textView1"
+                android:text="@string/district"
+                />
+
+            <TextView
+                android:id="@+id/tvDistrictData"
+                android:tag="@string/tag_tv_districtData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/district"
+                />
+
+            <TextView
+                android:id="@+id/tvBlock"
+                android:tag="@string/tag_tv_block"
+
+                style="@style/textView1"
+                android:text="@string/dev_block"
+                />
+
+            <TextView
+                android:id="@+id/tvBlockData"
+                android:tag="@string/tag_tv_blockData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/dev_block"
+                />
+
+            <TextView
+                android:id="@+id/tvGp"
+                android:tag="@string/tag_tv_gp"
+                style="@style/textView1"
+                android:text="@string/gram_panchayat"
+                />
+
+            <TextView
+                android:id="@+id/tvGpData"
+                android:tag="@string/tag_tv_gpData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/gram_panchayat"
+                />
+
+            <TextView
+                android:id="@+id/tvVillage"
+                android:tag="@string/tag_tv_village"
+
+                style="@style/textView1"
+                android:text="@string/village"
+                />
+
+            <TextView
+                android:id="@+id/tvVillageData"
+                android:tag="@string/tag_tv_villageData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/village"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tvEb"
+                android:tag="@string/tag_tv_eb"
+
+                style="@style/textView1"
+                android:text="@string/eb"
+                />
+
+            <TextView
+                android:id="@+id/tvEbData"
+                android:tag="@string/tag_tv_ebData"
+
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/eb"
+                />
+
+
+            <!-- Submit and Proceed Button-->
+            <LinearLayout
+                android:id="@+id/llSubmitSectionLocParam"
+                android:tag="@string/tag_ll_submitSectionLocParam"
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="right"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/btnSaveProceedSectionLocParam"
+                    android:tag="@string/tag_btn_saveProceedSectionLocParam"
+                    style="@style/buttonSaveAndProceed"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/textViewGreyLine"/>
+        <!-- Location Parameters layout Ends-->
+
+        <!-- Form Layout starts-->
+        <LinearLayout
+            android:id="@+id/llFormDetails"
+            android:tag="@string/tag_ll_formDetails"
+
+            style="@style/linearLayoutVertical1">
+
+            <!-- Household particulars Starts-->
+            <LinearLayout
+                android:id="@+id/llHouseholdParticulars"
+                android:tag="@string/tag_ll_householdParticulars"
+
+                style="@style/linearLayoutHorizontal1">
+
+                <ImageView
+                    android:id="@+id/ivHouseholdParticulars"
+                    android:tag="@string/tag_iv_householdParticulars"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/icon_plus"/>
+                <TextView
+                    style="@style/textView3"
+                    android:text="@string/household_particulars"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llHouseholdParticularsDetails"
+                android:tag="@string/tag_ll_householdParticularsDetails"
+
+                style="@style/linearLayoutVertical2">
+
+                <!--Avilability of LPG gas connection-->
+                <TextView
+                    android:id="@+id/tvAvailabilityOfLpgConnection"
+                    android:tag="@string/tag_tv_availabilityOfLpgConnection"
+
+                    android:text="@string/is_lpg_connection_available"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvAvailabilityOfLpgConnectionData"
+                        android:tag="@string/tag_tv_availabilityOfLpgConnection_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/llAvailabilityOfLpgConnectionYes"
+                        android:tag="@string/tag_ll_availabilityOfLpgConnectionYes"
+
+                        style="@style/linearLayoutVertical2">
+
+                        <TextView
+                            android:id="@+id/tvLpgConsumerId"
+                            android:tag="@string/tag_tv_lpgConsumerId"
+
+                            android:text="@string/lpg_consumer_id"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvLpgConsumerIdData"
+                            android:tag="@string/tag_tv_lpgConsumerId_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/tvCylinderRefillFrequency"
+                            android:tag="@string/tag_tv_cylinderRefillFrequency"
+
+                            android:text="@string/no_of_times_refilled_in_last_one_yr"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvCylinderRefillFrequencyData"
+                            android:tag="@string/tag_tv_cylinderRefillFrequency_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Avilability of electricity connection-->
+                <TextView
+                    android:id="@+id/tvAvailabilityOfElectricityConnection"
+                    android:tag="@string/tag_tv_availabilityOfElectricityConnection"
+
+                    android:text="@string/is_electricity_connection_available"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvAvailabilityOfElectricityConnectionData"
+                        android:tag="@string/tag_tv_availabilityOfElectricityConnection_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/llAvailabilityOfElectricityConnectionYes"
+                        android:tag="@string/tag_ll_availabilityOfElectricityConnectionYes"
+
+                        style="@style/linearLayoutVertical2">
+
+                        <!-- If Yes, whether the household has LED Bulbs under UJALA yojana  -->
+                        <TextView
+                            android:id="@+id/tvAvailabilityOfLedBulbsUjala"
+                            android:tag="@string/tag_tv_availabilityOfLedBulbsUjala"
+
+                            android:text="@string/is_led_available_under_ujala"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvAvailabilityOfLedBulbsUjalaData"
+                            android:tag="@string/tag_tv_availabilityOfLedBulbsUjala_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Does any member of the household have PM Jan Dhan Account ?-->
+                <TextView
+                    android:id="@+id/tvAvailabilityOfPmJanDhanAccount"
+                    android:tag="@string/tag_tv_availabilityOfPmJanDhanAccount"
+
+                    android:text="@string/is_any_member_have_jandhan_ac"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAvailabilityOfPmJanDhanAccountData"
+                    android:tag="@string/tag_tv_availabilityOfPmJanDhanAccount_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--Whether the household is enrolled under PM Jeevan Jyoti Bima Yojana ?-->
+                <TextView
+                    android:id="@+id/tvWhetherEnrolledForPmjjy"
+                    android:tag="@string/tag_tv_whetherEnrolledForPmjjy"
+                    android:text="@string/is_hhd_enrolled_in_pmjjby"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWhetherEnrolledForPmjjyData"
+                    android:tag="@string/tag_tv_whetherEnrolledForPmjjy_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--Whether any member of the household is enrolled under PM Suraksha Bima Yojana ?-->
+                <TextView
+                    android:id="@+id/tvWhetherEnrolledForPmsby"
+                    android:tag="@string/tag_tv_whetherEnrolledForPmsby"
+                    android:text="@string/is_any_member_enrolled_in_pmsby"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWhetherEnrolledForPmsbyData"
+                    android:tag="@string/tag_tv_whetherEnrolledForPmsby_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--whether any member of the household has been immunised under Mission Indra-Dhanush ?-->
+                <TextView
+                    android:id="@+id/tvWhetherImmunizedUnderMissionIndradhanush"
+                    android:tag="@string/tag_tv_whetherImmunizedUnderMissionIndradhanush"
+                    android:text="@string/is_any_member_immunised_under_mission_indradhanush"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWhetherImmunizedUnderMissionIndradhanushData"
+                    android:tag="@string/tag_tv_whetherImmunizedUnderMissionIndradhanush_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--Is there any child (0-6 yrs.) or pregnant woman available in the household ?-->
+                <TextView
+                    android:id="@+id/tvAnyChild0To6OrPregnantWomanAvailable"
+                    android:tag="@string/tag_tv_anyChild0To6OrPregnantWomanAvailable"
+                    android:text="@string/is_any_child_0_6_yrs_or_pregnant_woman_available"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvAnyChild0To6OrPregnantWomanAvailableData"
+                        android:tag="@string/tag_tv_anyChild0To6OrPregnantWomanAvailable_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llAnyChild0To6OrPregnantWomanAvailableYes"
+                        android:tag="@string/tag_ll_AnyChild0To6OrPregnantWomanAvailableYes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If yes, whether any member of the household registered in ICDS ?-->
+                        <TextView
+                            android:id="@+id/tvWhetherAnyMemberRegisteredUnderIcds"
+                            android:tag="@string/tag_tv_whetherAnyMemberRegisteredUnderIcds"
+                            android:text="@string/is_any_member_registered_in_icds"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvWhetherAnyMemberRegisteredUnderIcdsData"
+                            android:tag="@string/tag_tv_whetherAnyMemberRegisteredUnderIcds_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                        <!--If Yes, please check the services availed under ICDS-->
+                        <TextView
+                            android:id="@+id/tvCheckServicesUnderIcds"
+                            android:tag="@string/tag_tv_checkServicesUnderIcds"
+                            android:text="@string/services_availed_under_icds"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvCheckServicesUnderIcdsData"
+                            android:tag="@string/tag_tv_checkServicesUnderIcds_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llAnyChild0To6OrPregnantWomanAvailableNo"
+                        android:tag="@string/tag_ll_AnyChild0To6OrPregnantWomanAvailableNo"
+
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If No, whether the household has ever availed the nutrition benefits under ICDS?-->
+                        <TextView
+                            android:id="@+id/tvWhetherAvailedNutritionBenefirIcds"
+                            android:tag="@string/tag_tv_whetherAvailedNutritionBenefirIcds"
+                            android:text="@string/is_hhd_availed_nutrition_benefits_under_icds"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvWhetherAvailedNutritionBenefirIcdsData"
+                            android:tag="@string/tag_tv_whetherAvailedNutritionBenefirIcds_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Whether any member of the household is a member of the Self Help Group (SHG) under DAY - NRLM-->
+                <TextView
+                    android:id="@+id/tvAnyMemberOfShgUnderDayNrlm"
+                    android:tag="@string/tag_tv_anyMemberOfShgUnderDayNrlm"
+                    android:text="@string/whether_any_member_of_hhd_is_member_of_shg"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAnyMemberOfShgUnderDayNrlmData"
+                    android:tag="@string/tag_tv_anyMemberOfShgUnderDayNrlm_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--What is the type of House used by the household for living?-->
+                <TextView
+                    android:id="@+id/tvHouseholdType"
+                    android:tag="@string/tag_tv_householdType"
+                    android:text="@string/type_of_house_used_for_living"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvHouseholdTypeData"
+                    android:tag="@string/tag_tv_householdType_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--Whether the household is a beneficiary of the Pradhan Mantri Awaas Yojana - Gramin ? -->
+                <TextView
+                    android:id="@+id/tvWhetherBeneficiaryOfPmayG"
+                    android:tag="@string/tag_tv_whetherBeneficiaryOfPmayG"
+                    android:text="@string/whether_hhd_beneficiary_of_govthousing"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvWhetherBeneficiaryOfPmayGData"
+                        android:tag="@string/tag_tv_whetherBeneficiaryOfPmayG_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherBeneficiaryOfPmayGYes"
+                        android:tag="@string/tag_ll_whetherBeneficiaryOfPmayGYes"
+
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If Yes, please provide the status;-->
+                        <TextView
+                            android:id="@+id/tvProvideStatusOfPmayG"
+                            android:tag="@string/tag_tv_provide_status_of_pmayg"
+                            android:text="@string/pmayg_status"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvProvideStatusOfPmayGData"
+                            android:tag="@string/tag_tv_provide_status_of_pmayg_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                        <!--If Yes, please enter PMAY-G ID -->
+                        <TextView
+                            android:id="@+id/tvPmayGId"
+                            android:tag="@string/tag_tv_pmayg_id"
+                            android:text="@string/pmayg_id"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPmayGIdData"
+                            android:tag="@string/tag_tv_pmaygid_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Whether the household has been issued E-health card under Ayushman Bharat Pradhan Mantri Jan Arogya Yojana -->
+                <TextView
+                    android:id="@+id/tvWhetherIssuedEHealthCardUnderAbPmjay"
+                    android:tag="@string/tag_tv_whether_issued_ehealth_card_under_abpmjay"
+                    android:text="@string/whether_hhd_registered_health_scheme"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvWhetherIssuedEHealthCardUnderAbPmjayData"
+                        android:tag="@string/tag_tv_whether_issued_ehealth_card_under_abpmjay_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherIssuedEHealthCardUnderAbPmjayYes"
+                        android:tag="@string/tag_ll_whether_issued_ehealth_card_under_abpmjay_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If Yes, please enter family Health card Number -->
+                        <TextView
+                            android:id="@+id/tvFamilyHealthCardNo"
+                            android:tag="@string/tag_tv_family_health_card_no"
+                            android:text="@string/family_health_card_number"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvFamilyHealthCardNoData"
+                            android:tag="@string/tag_tv_family_health_card_no_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Whether any member of the household is getting pension under NSAP-National Social Assistance Program  -->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberGettingPensionNsap"
+                    android:tag="@string/tag_tv_whether_any_member_getting_pension_nsap"
+                    android:text="@string/is_any_member_getting_pension_under_nsap"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvWhetherAnyMemberGettingPensionNsapData"
+                        android:tag="@string/tag_tv_whether_any_member_getting_pension_nsap_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherAnyMemberGettingPensionNsapYes"
+                        android:tag="@string/tag_ll_whether_any_member_getting_pension_nsap_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If yes, please select the type of pension -->
+                        <TextView
+                            android:id="@+id/tvSelectPension"
+                            android:tag="@string/tag_tv_select_pension"
+                            android:text="@string/type_of_pensions"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvSelectPensionData"
+                            android:tag="@string/tag_tv_select_pension_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Whether any member of the Household has ever worked under MGNREGA -->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberWorkedWithMgnrega"
+                    android:tag="@string/tag_tv_whether_any_member_wotked_with_mgnrega"
+                    android:text="@string/is_any_member_ever_worked_under_mgnrega"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvWhetherAnyMemberWorkedWithMgnregaData"
+                        android:tag="@string/tag_tv_whether_any_member_wotked_with_mgnrega_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherAnyMemberWorkedWithMgnregaYes"
+                        android:tag="@string/tag_ll_whether_any_member_worked_with_mgnrega_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If Yes, then provide  MGNREGA job card number -->
+                        <TextView
+                            android:id="@+id/tvMgnregaJobCardNo"
+                            android:tag="@string/tag_tv_mgnrega_job_card_no"
+                            android:text="@string/mgnrega_job_card_number"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvMgnregaJobCardNoData"
+                            android:tag="@string/tag_tv_mgnrega_job_card_no_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                        <!--If Yes, number of days worked under MGNREGA during last one year-->
+                        <TextView
+                            android:id="@+id/tvNoDaysWorkedWithMgnregaInLastYear"
+                            android:tag="@string/tag_tv_no_days_worked_with_mgnrega_last_year"
+                            android:text="@string/no_of_days_worked_under_mgnrega_in_last_one_yr"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvNoDaysWorkedWithMgnregaInLastYearData"
+                            android:tag="@string/tag_tv_no_days_worked_with_mgnrega_last_year_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Whether any member of the household undergone training under any Skill development/orientation scheme ?  -->
+                <TextView
+                    android:id="@+id/tvWhetherAnyMemberUndergoneTrainingInSkillDevScheme"
+                    android:tag="@string/tag_tv_whether_any_member_undergone_training_under_skill_dev_scheme"
+                    android:text="@string/is_any_member_undergone_training_under_any_skill_dev_prog"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvWhetherAnyMemberUndergoneTrainingInSkillDevSchemeData"
+                        android:tag="@string/tag_tv_whether_any_member_undergone_training_under_skill_dev_scheme_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llWhetherAnyMemberUndergoneTrainingInSkillDevSchemeYes"
+                        android:tag="@string/tag_ll_whether_any_member_undergone_training_under_skill_dev_scheme_yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If yes, please select the scheme type -->
+                        <TextView
+                            android:id="@+id/tvSkillDevSchemeType"
+                            android:tag="@string/tag_tv_skill_dev_scheme_type"
+                            android:text="@string/type_of_pensions"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvSkillDevSchemeTypeData"
+                            android:tag="@string/tag_tv_skill_dev_scheme_type_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Whether household has a functional toilets -->
+
+                <TextView
+                    android:id="@+id/tvWhetherHouseHoldHasFunctionalToilets"
+                    android:tag="@string/tag_tv_Whethere_household_has_functional_toilets"
+                    android:text="@string/is_hhd_available_a_functional_toilet"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWhetherHouseHoldHasFunctionalToiletsData"
+                    android:tag="@string/tag_tv_Whethere_household_has_functional_toilets_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+                <!--Please provide the Mobile Number(s) of HH members -->
+
+                <TextView
+                    android:id="@+id/tvHouseHoldMobileNo"
+                    android:tag="@string/tag_tv_house_hold_mobile_no"
+                    android:text="@string/mobile_numbers_hhd_members"
+                    style="@style/textView1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvHouseHoldMobileNoData"
+                    android:tag="@string/tag_tv_house_hold_mobile_no_data"
+
+                    style="@style/textView2WithMarginBottom"
+                    android:text="@string/no_data_present"
+                    />
+
+
+
+                <!--Whether household availing ration under NFSA scheme -->
+
+                <TextView
+                    android:id="@+id/tvWhetherHouseHoldAvailingRationNFSAScheme"
+                    android:tag="@string/tag_tv_Whether_house_hold_availing_ration_nfsa_scheme"
+                    android:text="@string/is_hhd_availing_ration_under_nfsa_scheme"
+                    style="@style/textView1"
+                    />
+
+                <LinearLayout
+                    style="@style/linearLayoutVertical3WithMarginBottom">
+
+                    <TextView
+                        android:id="@+id/tvWhetherHouseHoldAvailingRationNFSASchemeData"
+                        android:tag="@string/tag_tv_Whether_house_hold_availing_ration_nfsa_scheme_data"
+
+                        style="@style/textView2WithMarginBottom"
+                        android:text="@string/no_data_present"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/l1WhetherHouseHoldHasNFSASchemeYes"
+                        android:tag="@string/tag_l1_Whether_house_hold_nfsa_scheme_Yes"
+                        style="@style/linearLayoutVertical2">
+
+                        <!--If yes, provide the status of NFSA scheme Type -->
+                        <TextView
+                            android:id="@+id/tvNFSASchemeType"
+                            android:tag="@string/tag_tv_nfsa_ration_card_type"
+                            android:text="@string/nfsa_ration_card_type"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvNFSASchemeTypeData"
+                            android:tag="@string/tag_tv_nfsa_ration_card_type_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+                        <!--If Yes, please enter nfsa ration card no -->
+                        <TextView
+                            android:id="@+id/tvNfsaRationCardNo"
+                            android:tag="@string/tag_tv_nfsa_ration_card_no"
+                            android:text="@string/family_health_card_number"
+                            style="@style/textView1"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvNfsaRationCardNoData"
+                            android:tag="@string/tag_tv_nfsa_ration_card_no_data"
+
+                            style="@style/textView2WithMarginBottom"
+                            android:text="@string/no_data_present"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Submit and Proceed Button-->
+            <LinearLayout
+                android:id="@+id/llSubmitSectionA_1"
+                android:tag="@string/tag_ll_submitSectionA_1"
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="right"
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/btnSaveProceedSectionA_1"
+                    android:tag="@string/tag_btn_saveProceedSectionA_1"
+
+                    style="@style/buttonSaveAndProceed"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Household particulars layout Ends-->
+
+        <TextView
+            style="@style/textViewGreyLine"/>
+
+        <!-- Other Details layout Starts-->
+        <LinearLayout
+            android:id="@+id/llOthers"
+            style="@style/linearLayoutHorizontal1">
+
+            <ImageView
+                android:id="@+id/ivOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                style="@style/textView3"
+                android:text="@string/other_details"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOthersDetail"
+            style="@style/linearLayoutVertical2">
+
+            <!-- Dt record created-->
+            <TextView
+                android:id="@+id/tvDtRecord"
+                style="@style/textView1"
+                android:text="@string/dt_record"
+                />
+
+            <TextView
+                android:id="@+id/tvDtRecordData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/dt_record"
+                />
+
+            <!-- Is completed -->
+            <TextView
+                android:id="@+id/tvIsCompleted"
+                style="@style/textView1"
+                android:text="@string/is_completed"
+                />
+
+            <TextView
+                android:id="@+id/tvIsCompletedData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/is_completed"
+                />
+
+            <!-- Is send to server -->
+            <TextView
+                android:id="@+id/tvIsSendToServer"
+                style="@style/textView1"
+                android:text="@string/is_send_to_server"
+                />
+
+            <TextView
+                android:id="@+id/tvIsSendToServerData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/is_send_to_server"
+                />
+
+            <!-- Ts Send to server -->
+            <TextView
+                android:id="@+id/tvTsSendToServer"
+                style="@style/textView1"
+                android:text="@string/ts_send_to_server"
+                />
+
+            <TextView
+                android:id="@+id/tvTsSendToServerData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/ts_send_to_server"
+                />
+
+            <!-- Is uploaded -->
+            <TextView
+                android:id="@+id/tvIsUploaded"
+                style="@style/textView1"
+                android:text="@string/is_uploaded"
+                />
+
+            <TextView
+                android:id="@+id/tvIsUploadedData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/is_uploaded"
+                />
+
+            <!-- Ts Uploaded -->
+            <TextView
+                android:id="@+id/tvTsUploaded"
+                style="@style/textView1"
+                android:text="@string/ts_uploaded"
+                />
+
+            <TextView
+                android:id="@+id/tvTsUploadedData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/ts_uploaded"
+                />
+
+            <!-- Uploaded From app or portal -->
+            <TextView
+                android:id="@+id/tvUploadedFromAppOrPortal"
+                style="@style/textView1"
+                android:text="@string/uploaded_from_app_or_portal"
+                />
+
+            <TextView
+                android:id="@+id/tvUploadedFromAppOrPortalData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/uploaded_from_app_or_portal"
+                />
+
+            <!-- Uploaded By -->
+            <TextView
+                android:id="@+id/tvUploadedBy"
+                style="@style/textView1"
+                android:text="@string/uploaded_by"
+                />
+
+            <TextView
+                android:id="@+id/tvUploadedByData"
+                style="@style/textView2WithMarginBottom"
+                android:text="@string/uploaded_by"
+                />
+
+            <!-- Is verified -->
+            <TextView
+                android:id="@+id/tvIsVerified"
+                style="@style/textView1"
+                android:visibility="gone"
+                android:text="@string/is_verified"
+                />
+
+            <TextView
+                android:id="@+id/tvIsVerifiedData"
+                style="@style/textView2WithMarginBottom"
+                android:visibility="gone"
+                android:text="@string/is_verified"
+                />
+
+            <!-- Ts verified -->
+            <TextView
+                android:id="@+id/tvTsVerified"
+                style="@style/textView1"
+                android:visibility="gone"
+                android:text="@string/ts_verified"
+                />
+
+            <TextView
+                android:id="@+id/tvTsVerifiedData"
+                style="@style/textView2WithMarginBottom"
+                android:visibility="gone"
+                android:text="@string/ts_verified"
+                />
+
+            <!-- Verified From app or portal -->
+            <TextView
+                android:id="@+id/tvVerifiedFromAppOrPortal"
+                style="@style/textView1"
+                android:visibility="gone"
+                android:text="@string/verified_from_app_or_portal"
+                />
+
+            <TextView
+                android:id="@+id/tvVerifiedFromAppOrPortalData"
+                style="@style/textView2WithMarginBottom"
+                android:visibility="gone"
+                android:text="@string/verified_from_app_or_portal"
+                />
+
+            <!-- Verified By -->
+            <TextView
+                android:id="@+id/tvVerifiedBy"
+                style="@style/textView1"
+                android:visibility="gone"
+                android:text="@string/verified_by"
+                />
+
+            <TextView
+                android:id="@+id/tvVerifiedByData"
+                style="@style/textView2WithMarginBottom"
+                android:visibility="gone"
+                android:text="@string/verified_by"
+                />
+
+        </LinearLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btn_okGp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:text="@string/ok_l"/>
+
+    </LinearLayout>
+
+</ScrollView>

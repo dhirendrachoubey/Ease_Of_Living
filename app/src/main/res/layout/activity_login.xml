@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/llInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="#50FFFFFF">
+
+        <TextView
+            android:id="@+id/tvInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="@string/ok"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLogin"
+            android:orientation="vertical"
+            android:background="@color/cream"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llInstruction"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Login"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/ic_launcher_logo"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tvUserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/email_or_mob"
+                    android:textColor="@color/blue"/>
+                <EditText
+                    android:id="@+id/etUserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:maxLength="50"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/et_style"
+                    android:hint="@string/email_or_mob"/>
+                <TextView
+                    android:id="@+id/tvUserPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/password"
+                    android:textColor="@color/blue"/>
+
+                <LinearLayout
+                    android:id="@+id/llconfirmPassword_login"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center"
+                    android:layout_height="40dp"
+                    android:background="@drawable/et_style"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <EditText
+                        android:id="@+id/etUserPassword"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:textSize="15sp"
+                        android:background="#0000"
+                        android:inputType="textPassword"
+                        android:hint="@string/password"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="3">
+                        <CheckBox
+                            android:id="@+id/cbShowLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@mipmap/icon_eye_close" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/login"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvForgotPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text="@string/forgot_password"/>
+
+                    <TextView
+                    android:id="@+id/tvSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="@string/not_member"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBottom2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvDeRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="@string/de_register"/>
+
+                    <TextView
+                        android:id="@+id/tvChangeAppMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="@string/change_app_mode"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llBottom3"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvLoginAnotherUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="@string/login_as_another_user"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/icon_email"
+                android:drawableTint="@color/colorPrimary"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="nictech-ma@gov.in"/>
+
+
+            <!--<TextView
+                    android:id="@+id/tvCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:background="@android:color/white"
+                    android:textColor="@color/colorPrimary"
+                    android:drawableLeft="@mipmap/icon_phone"
+                    android:drawableTint="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="011-49075511"/>-->
+
+            <GridView
+                android:id="@+id/gvCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="2"
+                android:horizontalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

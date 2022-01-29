@@ -1,0 +1,120 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="in.nic.census2020">
+
+
+    <item
+        android:id="@+id/action_internet_status"
+        android:icon="@mipmap/icon_online_status"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/empty"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@mipmap/icon_overflow_menu">
+          <menu>
+
+                <item
+                    android:id="@+id/action_home"
+                    android:icon="@mipmap/icon_home"
+                    android:orderInCategory="96"
+                    app:showAsAction="never"
+                    android:visible="false"
+                    android:title="@string/home" />
+                  <item
+                      android:id="@+id/action_myprofile"
+                      android:icon="@mipmap/icon_myprofile"
+                      android:orderInCategory="96"
+                      app:showAsAction="never"
+                      android:title="@string/my_profile" />
+
+                  <item
+                      android:id="@+id/action_change_password"
+                      android:icon="@mipmap/icon_change_pwd"
+                      android:orderInCategory="96"
+                      app:showAsAction="never"
+                      android:title="@string/change_password" />
+
+                  <item
+                      android:id="@+id/action_change_language"
+                      android:icon="@mipmap/icon_language"
+                      android:orderInCategory="96"
+                      app:showAsAction="never"
+                      android:title="@string/change_language" />
+
+
+                  <item
+                          android:id="@+id/action_device_profile"
+                          android:icon="@mipmap/icon_device_profile"
+                          android:orderInCategory="96"
+                          app:showAsAction="never"
+                          android:title="@string/device_detail" />
+
+              <item
+                  android:id="@+id/action_contact_us"
+                  android:icon="@mipmap/icon_mobile"
+                  android:orderInCategory="96"
+                  app:showAsAction="never"
+                  android:title="@string/contact_us" />
+
+              <item
+                      android:id="@+id/action_about_app"
+                      android:icon="@mipmap/icon_about_us"
+                      android:orderInCategory="96"
+                      app:showAsAction="never"
+                      android:title="@string/about_app" />
+
+              <item
+                  android:id="@+id/action_my_admin"
+                  android:icon="@mipmap/icon_my_admin"
+                  android:orderInCategory="96"
+                  app:showAsAction="never"
+                  android:visible="false"
+                  android:title="My Admin" />
+
+
+              <item
+                  android:id="@+id/action_activity_monitor"
+                  android:icon="@mipmap/icon_activity_monitor"
+                  android:orderInCategory="96"
+                  app:showAsAction="never"
+                  android:visible="false"
+                  android:title="Activity Monitor" />
+
+
+              <item
+                  android:id="@+id/action_support_feedback"
+                  android:icon="@mipmap/icon_support"
+                  android:orderInCategory="96"
+                  app:showAsAction="never"
+                  android:title="@string/support_feedback" />
+
+              <item
+                  android:id="@+id/action_faq"
+                  android:icon="@mipmap/icon_faq"
+                  android:orderInCategory="96"
+                  app:showAsAction="never"
+                  android:title="@string/faq" />
+
+              <item
+                  android:id="@+id/action_hindi_quessionaire"
+                  android:icon="@mipmap/icon_faq"
+                  android:orderInCategory="96"
+                  app:showAsAction="never"
+                  android:title="@string/hindi_questionnaire" />
+
+              <item
+                      android:id="@+id/action_logout"
+                      android:icon="@mipmap/icon_logout"
+                      android:orderInCategory="99"
+                      app:showAsAction="never"
+                      android:title="@string/logout" />
+            </menu>
+
+     </item>
+
+</menu>

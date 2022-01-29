@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="italic|bold"
+            android:text="@string/upload_scanned_survey"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvDbRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/db_l"
+            android:textColor="@color/blue"
+            android:layout_marginTop="20dp"
+
+            />
+        <LinearLayout
+            android:id="@+id/llDbRole"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/et_style"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerDbRole"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:prompt="@string/db" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvGpRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/gp"
+            android:textColor="@color/blue"/>
+        <LinearLayout
+            android:id="@+id/llGpRole"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/et_style"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerGpRole"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvVillage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/please_select_vill"
+            android:textColor="@color/blue"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/et_style"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spinnerVillage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:prompt="@string/village" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/layout_round_corner"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:id="@+id/llUploadPicture"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_camera"
+                    android:layout_marginRight="20dp"
+                    android:tooltipText="@string/import_first_page"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPhotoUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/import_first_page"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/rounded_corner"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llUploadPicture2nd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivPhoto2nd"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_camera"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPhotoUpload2nd"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/import_last_page"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnUploadPdf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:text="@string/upload_pdf"
+            android:enabled="false"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

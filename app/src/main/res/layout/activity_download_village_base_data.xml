@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/village"
+        android:textColor="@color/blue"
+        android:textStyle="bold|italic"
+        android:paddingLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/et_style"
+        android:padding="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Spinner
+            android:id="@+id/spinnerEnuVillage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/enu_db"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/llVillage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/lvEnuDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="3dp"
+            android:layout_margin="2dp"
+            android:fadeScrollbars="false"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

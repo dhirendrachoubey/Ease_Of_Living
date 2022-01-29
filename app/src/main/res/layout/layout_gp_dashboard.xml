@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:background="@drawable/layout_round_corner">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header Starts-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/enum_block_status"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Header Ends-->
+
+        <LinearLayout
+            style="@style/linearLayoutVertical1">
+
+            <TextView
+                android:id="@+id/tvGpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/enum_block_status"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvEnumBlockLastSynced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/enum_block_status"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:gravity="center"/>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvTotalHhds"
+                    android:text="@string/total_hhd"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvTotalHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvUninhabitatVillages"
+                    android:text="@string/uninhabitat_villages"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUninhabitatVillagesData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvNotStartedHhds"
+                    android:text="@string/not_started_hhds"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvNotStartedHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvSaveAsDraftHhds"
+                    android:text="@string/save_as_draft_hhds"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSaveAsDraftHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvCompletedHhds"
+                    android:text="@string/completed_hhds"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvCompletedHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvUploadPendingHhds"
+                    android:text="@string/upload_pending_households"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUploadPendingHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvUploadedHhds"
+                    android:text="@string/uploaded_hhds"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUploadedHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutHorizontal1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvVerifiedHhds"
+                    android:text="@string/verified_hhds"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tvVerifiedHhdsData"
+                    android:text="0"
+                    style="@style/textView8"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/textViewGreyLine"/>
+        <!-- Location Parameters layout Ends-->
+
+
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btn_okGp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:text="@string/ok_l"/>
+
+    </LinearLayout>
+
+</ScrollView>

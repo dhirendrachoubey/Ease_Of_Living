@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/layout_round_corner"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        tools:context="com.mompluss.android.VerifyOTPActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/verification"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_close"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="@string/privacy_validation_message"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tvUserIdEmailOrMob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:visibility="gone"
+                android:text="@string/email_or_mob"/>
+
+            <EditText
+                android:id="@+id/etUserIdEmailOrMob"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_style"
+                android:hint="@string/email_or_mob"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/btnSubmitEmailOrMob"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"
+                style="@style/buttonBlue"
+                android:text="@string/submit" />
+
+            <TextView
+                android:id="@+id/tvMobileOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:visibility="gone"
+                android:text="@string/mobile_otp"/>
+
+            <EditText
+                android:id="@+id/etMobileOtp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_style"
+                android:maxLength="6"
+                android:visibility="gone"
+                android:hint="@string/mobile_otp"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                android:id="@+id/llOtp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/btnResendOtp"
+                    android:layout_width="match_parent"
+                    style="@style/buttonBlue"
+                    android:layout_weight="1"
+                    android:text="@string/resend_otp" />
+
+                <Button
+                    android:id="@+id/btnSubmitOtp"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    style="@style/buttonBlue"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/submit" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmitDeRegister"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:visibility="gone"
+                style="@style/buttonBlue"
+                android:layout_marginTop="15px"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

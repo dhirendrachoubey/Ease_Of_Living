@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/layout_round_corner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvUser_name"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_close"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_height="1.5dp"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:textSize="18sp"
+        android:text="@string/member_status"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/et_style"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbAv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="@string/av"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rbMo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mo"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rbDied"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/died"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnSave_as_draft"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        android:layout_marginRight="50dp"
+        style="@style/buttonLightBlue"
+        android:text="@string/saveasdraft"
+        android:layout_gravity="right"/>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="100dp"
+            style="@style/buttonBlue"
+            android:text="@string/continues"
+            android:layout_gravity="right"/>
+  </LinearLayout>
+
+</LinearLayout>

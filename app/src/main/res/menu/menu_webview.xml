@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_internet_status"
+        android:icon="@mipmap/icon_online_status"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_webview_home"
+        android:icon="@mipmap/icon_reports"
+        app:showAsAction="ifRoom"
+        android:title="" />
+</menu>

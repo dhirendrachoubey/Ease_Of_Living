@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/layout_round_corner">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        tools:context="com.mompluss.android.VerifyOTPActivity"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/home_option_generate_pdf"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_close"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:text="@string/msg_select_pdf_type"/>
+
+            <LinearLayout
+                android:id="@+id/llPdfCategory"
+                style="@style/linearLayoutHorizontal2"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                >
+                <RadioGroup
+                    android:id="@+id/rgPdfSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="vertical"
+                    >
+                    <RadioButton
+                        android:id="@+id/rbHindiPdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/download_pdf_hindi"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        />
+                    <RadioButton
+                        android:id="@+id/rbEngPdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/generate_pdf_english"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:id="@+id/rbPdfVillageFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/pdf_village_wise_final"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                       />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/llSubmit"
+                style="@style/linearLayoutHorizontal1"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                >
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/buttonSaveAndProceed"
+                    android:text="@string/submit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

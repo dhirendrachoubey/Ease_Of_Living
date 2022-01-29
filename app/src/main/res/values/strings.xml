@@ -1,0 +1,1558 @@
+<resources>
+    <string name="app_name">Ease Of Living</string>
+    <string name="add_gp_header">Gram Panchayat Data</string>
+    <string name="location_parameters">Location Parameters</string>
+    <string name="alloted_location">Location assigned</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="dev_block">Development Block</string>
+    <string name="gram_panchayat">Gram Panchayat</string>
+    <string name="village">Village</string>
+    <string name="pincode">Pincode</string>
+    <string name="base_data">Base Data - </string>
+    <string name="min_of_sanitation_data">Ministry of Drinking Water and Sanitation Data - </string>
+    <string name="lock_all_members">Please lock all save draft members first.</string>
+    <string name="empty_value">Empty Value</string>
+    <string name="household_particulars">Household Particulars</string>
+    <string name="availability_of_lpg_gas_connection">Whether LPG gas connection is available in the Household?</string>
+    <string name="cylinder_refill_frequency">If Yes, then number of times the cylider is refilled in last one year</string>
+    <string name="availability_of_electricity_connection">Whether electricity connection is available in the household?</string>
+    <string name="availability_of_led_bulbs_ujala">If Yes, whether the household has LED Bulbs under UJALA yojana (Unnat Jyoti by Affordable LEDs for All) ?</string>
+    <string name="availability_of_pm_jandhan_account">Does any member of the household have PM Jan Dhan Account ?</string>
+    <string name="whether_enrolled_for_pmjjy">Whether the household is enrolled under PM Jeevan Jyoti Bima Yojana ?</string>
+    <string name="whether_enrolled_for_pmsby">Whether any member of the household is enrolled under PM Suraksha Bima Yojana ?</string>
+    <string name="whether_immunized_under_mission_indradhanush">whether any member of the household has been immunised under Mission Indra-Dhanush ?</string>
+    <string name="any_child_0_6_or_pregnant_woman_available">Is there any child (0-6 yrs.) or pregnant woman available in the household ?</string>
+    <string name="any_member_shg_under_day_nrlm">Whether any member of the household is a member of the Self Help Group (SHG) under DAY - NRLM</string>
+    <string name="whether_availed_nutrition_benefit_icds">If No, whether the household has ever availed the nutrition benefits under ICDS?</string>
+    <string name="check_services_under_icds">If Yes, please check the services availed under ICDS</string>
+    <string name="household_type">What is the type of House used by the household for living?</string>
+    <string name="whether_any_member_registered_under_icds">If yes, whether any member of the household registered in ICDS ?</string>
+    <string name="whether_beneficiary_of_pmayg">Whether the household is a beneficiary of the Pradhan Mantri Awaas Yojana - Gramin ?</string>
+    <string name="provide_status_of_pmayg">If Yes, please provide the status</string>
+  <!--  <string name="whether_issued_ehealth_card_under_abpmjay">Whether the household has been issued E-health card under Ayushman Bharat Pradhan Mantri Jan Arogya Yojana</string>
+    <string name="family_health_card_number">If Yes, please enter family Health card Number</string>
+  -->
+    <string name="eb">Village Part</string>
+    <string name="status_update_success">Data received successfully.</string>
+    <string name="status_update_success_1">Household status updated.</string>
+    <string name="get_data_no_data">Data already retreived.</string>
+    <string name="get_data_no_village_status">No household status to update</string>
+    <string name="home_option_village_status">Get households status</string>
+    <string name="enu_db">Enumerated Block</string>
+
+
+    <!-- Questionnaire -->
+    <!-- Categories-->
+    <string name="part_a">Part A</string>
+    <string name="part_b">Part B</string>
+    <string name="basic_parameters">Basic Parameters</string>
+    <string name="section_agriculture">Agriculture</string>
+    <string name="section_land_improvement_minor_irr">Land Improvement and Minor Irrigation</string>
+    <string name="section_animal_husbandry">Animal Husbandry</string>
+    <string name="section_fisheries">Fisheries</string>
+    <string name="section_rural_housing">Rural Housing</string>
+    <string name="section_drinking_water">Drinking Water</string>
+    <string name="section_roads">Roads</string>
+    <string name="section_rural_electrification">Rural Electrification</string>
+    <string name="section_non_conventional">Non Conventional Energy</string>
+    <string name="section_maint_community_assets">Maintenance of Community Assets</string>
+    <string name="section_fuel_fodder">Fuel and fodder</string>
+    <string name="section_libraries">Libraries</string>
+    <string name="section_cultural_activities">Cultural Activities</string>
+    <string name="section_financial_communcation_infrastructure">Financial and communication infrastructure</string>
+    <string name="section_pds">Public Distribution System</string>
+    <string name="section_education">Education</string>
+    <string name="section_vocational_education">Vocational Education</string>
+    <string name="section_markets_fairs"><![CDATA[Markets & Fairs]]></string>
+    <string name="section_health_sanitation"><![CDATA[Health & Sanitation]]></string>
+    <string name="section_women_child_dev"><![CDATA[Women & Child Development]]></string>
+    <string name="section_social_welfare">Social Welfare</string>
+    <string name="section_family_welfare">Family Welfare</string>
+    <string name="section_weaker_section">Welfare of Weaker Section</string>
+    <string name="section_poverty_alleviation_programme">Poverty Alleviation Programme</string>
+    <string name="section_khadi_village_cottage_ind"><![CDATA[Khadi, Village & Cottage Industries]]></string>
+    <string name="section_social_forestry">Social Forestry</string>
+    <string name="section_minor_forest_produce">Minor Forest Produce</string>
+    <string name="section_small_scale_industries">Small Scale Industries</string>
+    <string name="section_adult_non_formal_edu">Adult and non formal education</string>
+    <string name="select_critical_illness">Select Critical Illness</string>
+    <string name="select_bank_loan_amount">Select bank loan amount</string>
+    <string name="select_wall_type">Select material of wall</string>
+    <string name="select_roof_type">Select material of roof</string>
+    <string name="enter_dwelling_room">Enter number of dwelling rooms</string>
+    <string name="empty_unirrigated_land">Empty total unirrigated land</string>
+    <string name="empty_assured_irrigation">Empty assured irrigation for two crops</string>
+    <string name="empty_other_irrigated_land">Empty other irrigated land</string>
+    <string name="select_computer_laptop_lightsource">Computer/Laptop can not be Yes if Main source of lighting is not Electricity or Solar.</string>
+    <string name="select_computer_laptop">Select Computer/Laptop</string>
+    <string name="select_air_conditioner_lightsource">Air Conditioner can not be Yes if Main source of lighting is not Electricity or Solar.</string>
+    <string name="select_washing_machine_lightsource">Washing machine can not be Yes if Main source of lighting is not Electricity or Solar.</string>
+    <string name="select_smartphone_lightsource">Smartphone can not be Yes if Main source of lighting is not Electricity or Solar.</string>
+    <string name="select_ownership_type">Select ownership status</string>
+    <string name="select_hhless_hhnum">Houseless  can not be selected if house no. is available.</string>
+    <string name="select_sheltersless">Select Shelterless</string>
+    <string name="select_post_office_acc_availability">Select post office account availability</string>
+    <string name="select_outisde_road_street_light">Select outside road illuminated with street light</string>
+    <string name="ration_card_no_empty">Ration card no is empty!</string>
+    <string name="contact_no_empty">Empty Contact no!</string>
+    <string name="select_telephone_type">Type of telephone can not be No Phone beacuse memeber already has contact number.</string>
+    <string name="select_house_connect_road_street_light">Select house connected with road illuminated with street light</string>
+
+    <string name="select_phc_centre">Select PHC/Sub centre accessebility</string>
+    <string name="select_village">Select Village</string>
+    <string name="msg_select_state">Please Select State</string>
+    <string name="msg_select_district">Please Select District</string>
+
+
+    <string name="spinner_heading_cooking_fuel">-- Select Fuel --</string>
+    <string name="spinner_heading_drainage_facility">-- Select Drainage facility --</string>
+    <string name="spinner_heading_household_liability_range">-- Select Liability range --</string>
+    <string name="spinner_heading_household_income_source">-- Select Income source --</string>
+    <string name="spinner_heading_household_type">-- Select House type --</string>
+    <string name="spinner_heading_latrine_facility">-- Select Latrine facility --</string>
+    <string name="spinner_heading_lighting_source">-- Select Light source --</string>
+    <string name="spinner_heading_piped_drinking_water">-- Select Piped drinking water --</string>
+    <string name="spinner_heading_ration_card_status">-- Select Ration Card --</string>
+    <string name="spinner_heading_registered_motor">-- Select Registered Motor --</string>
+    <string name="spinner_heading_telephone_type">-- Select Telephone type --</string>
+    <string name="spinner_heading_hhd_uncovered_remark">-- Select Uncovered household remark --</string>
+
+    <!-- part-b categories-->
+    <string name="health_nutrition">Health and Nutrition</string>
+    <string name="social_security">Social Security</string>
+    <string name="agriculture_livelihoods"><![CDATA[Agriculture & Livelihoods]]></string>
+    <string name="good_governance">Good governance</string>
+    <string name="water_management_efficiency">Water management and Efficiency</string>
+
+
+    <!-- Questions -->
+    <!-- part a -->
+    <string name="parliament_constituency">Parliament Constituency</string>
+    <string name="assembly_constituency">Assembly Constituency</string>
+    <string name="name_of_constituency">If more than one AC, enter name of constituency</string>
+    <string name="total_population">Total Population</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="total_household">Total Household</string>
+    <string name="hhd_farm_activity">Number of households engaged majorly in Farm activities</string>
+    <string name="hhd_non_farm_activity">Number of households engaged majorly in Non-Farm activities</string>
+    <string name="govt_seed_center">Availability of government seed centres</string>
+    <string name="if_no_distance_govt_seed_centre">If not available in the village; the distance to the nearest place where facility is available</string>
+    <string name="water_shed_dev">Whether this village is a part of the Watershed Development Project</string>
+    <string name="rain_water_harvesting">Availability of Community Rain Water Harvesting System/Pond/Dam/Check Dam etc.</string>
+    <string name="farmers_collective">Does the village has any Farmers Collective</string>
+    <string name="food_storage_warehouse">Availability of warehouse for food grain storage</string>
+    <string name="if_no_distance_food_storage">If not available in the village, the distance to the nearest warehouse for food grain storage</string>
+    <string name="primary_processing_facilities">Availability of Primary Processing facilities at the village level</string>
+    <string name="access_to_custom_hiring_centre">Does the village have access to Custom Hiring Centre (Agri-equipments)</string>
+    <string name="acre_to_hectare_conversion">(Note: If in acre, divide by 2.47 to get value in hectare)</string>
+    <string name="total_cultivable_area">Total Cultivable Area (in hectares)</string>
+    <string name="net_area_sown">Net sown Area (in ha)</string>
+    <string name="kharif">Kharif………….(In hectares)</string>
+    <string name="rabi">Rabi………….(In hectares)</string>
+    <string name="others_area">Other………..(In hectares)</string>
+    <string name="soil_testing_center">Availability of soil testing centres</string>
+    <string name="if_no_distance_soil_testing_centre">If not available in the village, the distance to the nearest soil testing centre</string>
+    <string name="fertilizer_shop">Availability of fertilizer shop</string>
+    <string name="if_no_distance_fertilizer_shop">If not available in the village, the distance to the nearest fertilizer shop</string>
+    <string name="irrigation_main_source">Main Source of irrigation</string>
+    <string name="drip_sprinkler">Number of farmers using drip/sprinkler irrigation</string>
+    <string name="irrigated_land">Area irrigated (in ha)</string>
+    <string name="unirrigated_land">Total Unirrigated Land Area (in ha)</string>
+    <string name="livestock_extension_services">Does the village have Livestock Extension services</string>
+    <string name="milk_routes">Availability of Milk Collection Centre /Milk routes / Chilling Centres</string>
+    <string name="poultry">Any Project supporting Poultry Development</string>
+    <string name="goatry">Any Project supporting Goatary Development</string>
+    <string name="pigery">Any Project supporting Pigery Development</string>
+    <string name="veterinary_centre">Availability of Veterinary Clinic or Hospital</string>
+    <string name="if_no_distance_veterinary_clinic">If not available in the village, the distance to the nearest Veterinary Clinic or Hospital</string>
+    <string name="pisciculture">Pisciculture - InLand Fishery/Coastal Fishery/Any Other</string>
+    <string name="fishing_ponds">Community Ponds Used for Fisheries</string>
+    <string name="aquaculture_ext_facilities">Extension facilities for Aquaculture</string>
+    <string name="if_no_distance_aquaculture">If not available in the village, the distance to the nearest Extension facilities</string>
+    <string name="hhd_in_kuccha_house">No of household with kuccha wall and kuccha roof</string>
+    <string name="about_kuccha_wall_roof">About Kuccha Wall, Roof</string>
+    <string name="kuccha_wall_or_roof">Kuccha Wall/Roof </string>
+    <string name="kuccha_wall_roof_values"> -- Kuccha Wall --\n
+                        1. Grass/thatch/bamboo etc.\n
+                        2. Plastic/polythene. \n
+                        3. Mud/unburnt brick \n
+                        4. Wood \n
+                        5. Stone not packed with mortar \n\n
+                        -- Kuccha Roof --\n
+                        1. Grass/thatch/bamboo/wood/mud etc.\n
+                        2. Plastic/polythene\n
+                        3. Hand made tiles</string>
+    <string name="hhd_got_pmay_house">No of Households who have got a PMAY House (completed or sanctioned)</string>
+    <string name="hhd_in_permamnent_wait_list">No of Households who are in the Permanent Wait List</string>
+    <string name="hhd_benefitted_from_state_specific_housing_scheme">No. of Households who got benefit from any State Specific Housing Scheme</string>
+    <string name="hhd_in_permamnent_wait_list_state_specific_housing_scheme">No. of Households who are in the Permanent Wait List of State Specific Housing Scheme</string>
+    <string name="tap_water">Availability of Piped tap water</string>
+    <string name="if_no_distance_tap_water">If not covered in the village; the distance to the nearest Piped tap water facility</string>
+    <string name="all_weather_road">Whether the village is connected to All weather road </string>
+    <string name="if_no_distance_all_weather_road">If not connected, the distance to the nearest all weather road</string>
+    <string name="cc_or_brick_road">Whether village has internal pucca roads (cc/ brick road)</string>
+    <string name="public_transport">Availability of Public Transport </string>
+    <string name="if_no_distance_public_transport">If not available in the village, the distance to the nearest Public Transport facility</string>
+    <string name="railway_station">Availability of Railway Station</string>
+    <string name="if_no_distance_railway_station">If not available in the village, the distance to the nearest Railway Station</string>
+    <string name="electricity">Availability of electricity for domestic use (in Hrs)</string>
+    <string name="hhd_availing_benefits_saubhagya">Number of Households availing the benefits under Saubhagya Scheme</string>
+    <string name="electricity_msme">Availability of Electricity Supply to MSME Units</string>
+    <string name="solar_energy_use">Use of Solar Energy/Wind Energy for electrification of the house</string>
+    <string name="hhd_electrified_by_solar_energy">If yes, Number of Households electrified by Solar Energy/Wind Energy</string>
+    <string name="panchayat_bhawan">Availability of Panchayat Bhawan</string>
+    <string name="common_service_centre">Is there a Common Service Centre (CSC) in the village</string>
+    <string name="public_info_board">Availability of Public Information Board under People\'s Plan Campaign</string>
+    <string name="common_pastures">Common pastures as per revenue records</string>
+    <string name="hhd_availing_benefit_pmuy">Number of Households availing benefits of Pradhan Mantri Ujjwala Yojana (PMUY)</string>
+    <string name="public_library">Availability of Public Library</string>
+    <string name="if_no_distance_public_library">If not available in the village, the distance to the nearest Public Library</string>
+    <string name="recreational_centre">Availability of recreational centre/Sports Playground etc.</string>
+    <string name="banks">Availability of banks</string>
+    <string name="if_no_distance_bank">If bank is not available in the village; the distance to the nearest bank</string>
+    <string name="business_has_internet_connectivity">Availability of Business Correspondent with internet connectivity?</string>
+    <string name="atm">Availability of ATM</string>
+    <string name="if_no_distance_atm">If not available in the village; the distance to the nearest ATM</string>
+    <string name="hhd_having_jan_dhan_acc">Number of households having Jan-Dhan bank account </string>
+    <string name="post_office">Availability of Post office / Sub-Post office</string>
+    <string name="if_no_distance_post_office">If not available in the village; the distance to the nearest Post Office</string>
+    <string name="telephone">Availability of Telephone Services</string>
+    <string name="internet_broadband_facility">Availability of Internet/BroadBand Facility </string>
+    <string name="pds">Availability of Public Distribution System(PDS)</string>
+    <string name="if_no_distance_pds">If not available in the village; the distance to the nearest Public Distribution System (PDS) facility</string>
+    <string name="hhd_having_bpl_ration_card">Number of Households having BPL ration cards</string>
+    <string name="primary_school">Availability of Primary School</string>
+    <string name="with_electricity">With electricity</string>
+    <string name="with_toilet">With toilet</string>
+    <string name="with_computer_lab">With Computer Lab</string>
+    <string name="with_playground">Play Ground</string>
+    <string name="with_drinking_water">Drinking Water</string>
+    <string name="with_mid_day_meal">Availability of mid day meal scheme</string>
+    <string name="total_students_primary_school">Number of Students in primary School(s)</string>
+    <string name="total_teachers_primary_school">Number of Teachers in primary School(s)</string>
+    <string name="if_no_distance_primary_school">If Primary School is not available in the village; the distance to the nearest Primary School</string>
+    <string name="middle_school">Availability of Middle School</string>
+    <string name="if_no_distance_middle_school">If Middle School is not available in the village; the distance to the nearest Middle School</string>
+    <string name="high_school">Availability of High School</string>
+    <string name="if_no_distance_high_school">If High School is not available in the village; the distance to the nearest High School</string>
+    <string name="senior_sec_school">Availability of Higher/Senior Secondary School</string>
+    <string name="if_no_distance_snr_sec_school">If Higher/Senior Secondary School is not available in the village; the distance to the nearest Higher/Senior Secondary School</string>
+    <string name="children_not_attending_school">No.of Children not attending the school</string>
+    <string name="degree_college">Availability of Degree College</string>
+    <string name="if_no_distance_degree_college">If Degree College is not available in the village; the distance to the nearest Degree College</string>
+    <string name="total_grad_postgrad">Number of Graduates/Post Graduates in the Village</string>
+    <string name="voc_edu_centres">Availability of Vocational Training Centre/Polytechnic/ITI/RSETI /DDU-GKY </string>
+    <string name="if_no_distance_voc_edu_centre">If not available in the village, the distance to the nearest Vocational Training Centre/Polytechnic/ITI/RSETI /DDU-GKY</string>
+    <string name="market">Availability of markets </string>
+    <string name="if_no_distance_market">If not available in the village, the distance to the nearest market</string>
+    <string name="phc_centre">Availability of Sub centre / PHC/ CHC </string>
+    <string name="if_no_distance_phc">If not available in the village; the distance to the nearest CHC/PHC/Sub centre</string>
+    <string name="jan_aushadhi_kendra">Availability of Jan Aushadhi Kendra</string>
+    <string name="hhd_health_insurance_services_pmjay">No. of Households registered for health insurance services under Pradhan Mantri Jan Arogya Yojana (PMJAY)/State specific Health Insurance Schemes</string>
+    <string name="distance_health_insurance_service_pmjay">Distance to the nearest hospital empaneled under PMJAY/State specific Health Insurance Schemes</string>
+    <string name="drainage">Availability of drainage facilities </string>
+    <string name="community_waste">Community waste disposal system </string>
+    <string name="total_hhd_using_clean_energy">Total no of household using clean energy (LPG/Bio gas)</string>
+    <string name="waste_recycle">Community bio gas or recycle of waste </string>
+    <string name="open_defecation">Is the village Open Defacation Free(ODF) </string>
+    <string name="aanganwadi_centre">Availability Of Aanganwadi Centre</string>
+    <string name="if_no_distance_aanganwadi">If not available in the village; the distance to the nearest Aanganwadi Centre</string>
+    <string name="early_childhood_edu_aanganwadi">Is Early Childhood Education provided in the Anganwadi</string>
+    <string name="total_0_to_3_aged_children">Total no of children in the age group of 0-3 years in the village </string>
+    <string name="zero_to_3_aged_children_aanganwadi">Total no of children aged 0-3 years registered in Aanganwadi</string>
+    <string name="three_to_6_aged_children_aanganwadi">Total no of children aged 3-6 years registered in Aanganwadi</string>
+    <string name="zero_to_3_aged_children_immunized">No of children aged 0-3 years immunized</string>
+    <string name="non_stunted_children_icds">Number of children categorized as Non-Stunted as per ICDS record</string>
+    <string name="pregnant_women_anemic">No. of Anemic Pregnant Women</string>
+    <string name="anemic_adoloscent_girls">No. of Anemic Adolescent Girls</string>
+    <string name="children_under_6_underweight">No. of children under the age of 6 years who are underweight</string>
+    <string name="total_child_male_0_6">No of Male Children (0-6 Years)</string>
+    <string name="total_child_female_0_6">No of Female Children (0-6 Years)</string>
+    <string name="minority_children_scholarship">Number of SC/ST/OBC/Minority Children getting Scholarship</string>
+    <string name="minority_hhd_bank_loan">Number of SC/ST/OBC/Minority households which received bank Loans</string>
+    <string name="implants_appliances_to_handicapped">No. of physically challenged persons who received implants and appliances</string>
+    <string name="hhd_with_more_than_2_childs">Number of Households with more than 2 Children</string>
+    <string name="mother_child_facilities">Availability of Mother and Child Health facilities</string>
+    <string name="if_no_distance_mother_child_facilities">If not available in the village, distance to the nearest Mother and Child Health facilities</string>
+    <string name="hhd_getting_pension_nsap">Number of Households getting pensions under National Social Assistance Programme(NSAP) (Old Age/Disability/Widow/National Family Benefit Scheme (NFBS)</string>
+    <string name="total_shg">Number of Self Help Groups (SHGs)</string>
+    <string name="hhd_mobilized_to_shg">No. of households mobilized into SHGs</string>
+    <string name="total_shg_hhd_mobilized_to_shg">If { %1$s } is  { %2$s } then \n </string>
+
+    <string name="self_help_group_federated">Number of SHGs federated into Village Organisations (VOs)</string>
+    <string name="hhd_mobilized_to_producer_groups">No. of households mobilized into Producer Groups</string>
+    <string name="shg_bank_loans">No. of SHGs which accessed bank loans </string>
+    <string name="bee_keeping">Bee Keeping</string>
+    <string name="sericulture">Availability of Sericulture</string>
+    <string name="handloom">Availability of Handloom</string>
+    <string name="handicraft">Handicrafts</string>
+    <string name="community_forest">Availability of Community Forest</string>
+    <string name="minor_forest_production">Availability of minor forest produce</string>
+    <string name="hhd_source_livelihood_minor_forest_prod">Number of Households where only source of livelihood is minor forest production</string>
+    <string name="cottage_small_scale_units">Availability of cottage and small scale units (Fabrication/Construction material/Dairy based/Textile etc.) units</string>
+    <string name="no_of_hhd_engaged_cottage_small_scale">Number of Households engaged in such units</string>
+    <string name="adult_edu_centre">Availability of Adult Education Centre</string>
+    <string name="if_no_distance_adult_edu">If not available in the village, distance to the nearest Adult Education Centre</string>
+
+    <!-- Part - b-->
+    <string name="total_registered_children_aanganwadi">Total number of registered children in  Anganwadi</string>
+    <string name="total_children_0_6_immunized_icds">Total number of children  (0-6 years) immunized under ICDS</string>
+    <string name="total_pregnant_women">Total number of Pregnant women</string>
+    <string name="pregnant_women_receiving_services_icds">No of pregnant women receiving  services* under ICDS</string>
+    <string name="total_lactating_mothers">Total number of lactating mothers</string>
+    <string name="lactating_mothers_receiving_services_icds">No of lactating mothers receiving services under ICDS</string>
+    <string name="babies_registered_asha">Total no of women delivered babies at the hospitals who are registered with ASHA Anganwadi workers</string>
+    <string name="total_children_icds_cas">Total no of children in ICDS Common Application Software</string>
+    <string name="yuong_anemic_children_icds_cas">No of young anemic children in ICDS Common Application Software (6-59 months)</string>
+    <string name="total_new_born_children">Total number of newly born children during the year 2018-19</string>
+    <string name="newly_born_under_weight">No of newly born children underweight</string>
+    <string name="hhd_not_having_sanitary_latrines">No of households not having sanitary latrines</string>
+    <string name="beneficiaries_pmmvy">Total no of eligible beneficiaries under Pradhan Mantri Matru Vandana Yojana</string>
+    <string name="beneficiaries_receiving_benefit_pmmvy">No of beneficiaries receiving benefits under Pradhan Mantri Matru Vandana Yojana</string>
+    <string name="beneficiaries_pmjay">Total no. of eligible beneficiaries under Aayushman Bharat-Pradhan Mantri Jan Arogya Yojana or any State Govt Health scheme</string>
+    <string name="beneficiaries_reveiving_benefit_pmjay">No. of beneficiaries receiving benefits under Aayushman Bharat-Pradhan Mantri Jan Arogya Yojana or any State Govt Health scheme</string>
+    <string name="eligible_hhd_nfsa">Total number of eligible households under National Food Security Act (NFSA)</string>
+    <string name="hhd_food_grain_fps">Total no of households receiving food grains from Fair Price Shops </string>
+    <string name="farmers_pmkpy">Total number of farmers registered under Pradhan Mantri Kisan Pension Yojana (PMKPY)</string>
+    <string name="farmers_18_40_pmkpy">Total number of farmers in the age of 18-40 years subscribed to Pradhan Mantri Kisan Pension Yojana (PMKPY)</string>
+    <string name="total_no_of_farmers">Total no of farmers</string>
+    <string name="farmers_received_benefit_pmfby">No of farmers received benefits under PMFBY</string>
+    <string name="farmers_adopted_organic_farming">No of farmers adopted organic farming during 2018-19</string>
+    <string name="farmers_received_soil_testing_reports">Number of farmers received the soil testing report</string>
+    <string name="elected_representatives">Total no of elected representatives</string>
+    <string name="elected_representatives_trained_rgsa">No of elected representatives undergone refresher training under Rashtriya Gram Swaraj Abhiyan</string>
+    <string name="elected_representatives_oriented_rgsa">No of elected representatives oriented under Rashtriya Gram Swaraj Abhiyan</string>
+    <string name="approved_labour_budget">Total approved Labour Budget for the year 2018-19</string>
+    <string name="approved_labour_budget_expenditure_nrm">Total expenditure approved under NRM in the Labour Budget for the year 2018-19</string>
+    <string name="irrigation_area_drip_sprinkler">Total area covered under irrigation (drip, sprinkler)(in ha.)</string>
+    <string name="hhd_having_piped_water_connection">No of households having piped water connection</string>
+    <string name="pdf_uploaded">Your Pdf has been uploaded successfully.</string>
+
+    <!-- Quessionaire ends-->
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="zero">0</string>
+
+    <string name="app">App</string>
+    <string name="save_proceed">Save and Proceed</string>
+    <string name="agriculture_allied_activities"><![CDATA[Agriculture & Allied activities]]></string>
+    <string name="rural_infrastructure">Rural Infrastructure</string>
+    <string name="edu_health_sani_nutri_women_child">Education, Health, Sanitation, Nutrition, Women and Child Development</string>
+    <string name="livelihoods_others">Livelihoods and Others</string>
+    <string name="msg_total_pop_gt_75000">Total population is greater than 75000 !</string>
+    <string name="msg_total_hhd_gt_20000">Total household is greater than 20000 !</string>
+    <string name="msg_total_area_gt_2000">Total area is greater than 2000 !</string>
+    <string name="msg_total_budget_gt_2500000">Total approved labout budget is greater than 25,00,000</string>
+
+    <string name="dt_record">Record Created </string>
+    <string name="is_completed">Is Completed</string>
+    <string name="other_details">Other Details</string>
+    <string name="save_draft">Save Draft</string>
+
+    <string name="submit">Submit</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_pwd">Old Password</string>
+    <string name="new_pwd">New Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
+    <string name="my_profile">My Profile</string>
+    <string name="upload_pic">Upload Picture</string>
+    <string name="user_id">User Id</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email ID</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="name">Name</string>
+    <string name="housenumber">House Number</string>
+    <string name="streetname">Street Name</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="gender">Gender</string>
+    <string name="lastname">Last Name</string>
+    <string name="area">Area</string>
+    <string name="trans_gender">Transgender</string>
+    <string name="dob">Date of Birth</string>
+    <string name="id_proof">Id Proof</string>
+    <string name="id_number">Id Number</string>
+    <string name="organisation_name">Organisation Name</string>
+    <string name="roles">Roles</string>
+    <string name="approvedby">Approved By</string>
+    <string name="ok">OK</string>
+    <string name="ok_l">OK</string>
+    <string name="login">Login</string>
+    <string name="not_member">Not a member ? Register now</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="de_register">Remove Registration</string>
+    <string name="user_verification">User Verification</string>
+    <string name="mobile">Mobile</string>
+    <string name="skip">Skip</string>
+    <string name="privacy_validation_message">Please verify your contact detail to proceed.</string>
+    <string name="verification">Verification</string>
+    <string name="email_otp">Enter Email OTP</string>
+    <string name="mobile_otp">Enter Mobile OTP</string>
+    <string name="email_or_mob">Email or Mobile</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="error_no_connection">No Network available</string>
+    <string name="error_no_server_available">Connection to the server failed</string>
+    <string name="error_export_no_file_found">Kindly grant external storage permission to export file</string>
+    <string name="error_server_default">Some error occurred in contacting server.\n Please try again later.</string>
+    <string name="error_null_pointer">Some error occurred in contacting server.\n Please try again later.</string>
+    <string name="lgd_code">Lgd Code</string>
+    <string name="search_using">Search using following</string>
+    <string name="search">Search</string>
+    <string name="db">Development Block</string>
+    <string name="db_l">Development Block</string>
+    <string name="reject">Reject</string>
+    <string name="approve">Approve</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="personal_detail">Personal Detail</string>
+    <string name="takepicture">Take a Picture</string>
+    <string name="title_name">Title Name</string>
+    <string name="firstname">First Name</string>
+    <string name="middlename">Middle Name</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="sex">Sex</string>
+    <string name="business_profile">Business Profile</string>
+    <string name="official_email_id">Official Email Id</string>
+    <string name="official_contact">Official Contact</string>
+    <string name="nearaboutlocation">Near about Location</string>
+    <string name="role_type">Role Type</string>
+    <string name="gp">Gram Panchayat</string>
+    <string name="personal_data" />
+    <string name="total_hhd">Total Households</string>
+    <string name="completed_hhds">Households Completed</string>
+
+
+    <string name="spinner_heading_village">-- Village --</string>
+    <string name="spinner_heading_distance_from_village">-- Distance from Village --</string>
+    <string name="spinner_heading_drainage">-- Drainage Type --</string>
+    <string name="spinner_heading_electricity">-- Hours of Electricity --</string>
+    <string name="spinner_heading_irrigation_source">-- Irrigation Source --</string>
+    <string name="spinner_heading_mandi_market_haat">-- Mandi Market Haat --</string>
+    <string name="spinner_heading_phc_chc">-- Phc/Chc --</string>
+    <string name="spinner_heading_public_transport">-- Public Transport --</string>
+    <string name="spinner_heading_school">-- School Type --</string>
+    <string name="spinner_heading_telephone">-- Telephone Services --</string>
+    <string name="spinner_heading_tap_water">-- Tap Water --</string>
+    <string name="spinner_heading_state">-- Select State --</string>
+    <string name="spinner_heading_id">-- Select Id --</string>
+    <string name="spinner_heading_role">-- Select Roles --</string>
+    <string name="spinner_heading_district">-- Select District --</string>
+    <string name="spinner_heading_db">-- Select Development Block --</string>
+    <string name="spinner_heading_gp">-- Select Gram Panchayat --</string>
+    <string name="spinner_heading_title">-- Select Title --</string>
+    <string name="select_language">Select Language</string>
+    <string name="continues">Continue</string>
+    <string name="pdf">PDF File</string>
+    <string name="sno">SNo.</string>
+    <string name="question">Question</string>
+    <string name="census_2011_status">Census 2011\nStatus</string>
+    <string name="ma_2017_status">Survey 2017\nStatus</string>
+    <string name="gram_smiti_approval">Gram Samiti Approval</string>
+    <string name="gram_smiti_changes">Gram Samiti ApprovalChange Value</string>
+    <string name="gram_sevak">Gram Sevak/CRP\n\nName ....................................\nSignature ................................</string>
+    <string name="bdo">BDO\n\nName ....................................\nSignature ................................</string>
+    <string name="gramsmiti_signature">Gram Samiti Member Signature</string>
+    <string name="change_gp">Change Gram Panchayat</string>
+    <string name="update_version_optional">New version of MA app is released now. \n Please upgrade to access all new features. Before upgrade please see FAQ.</string>
+    <string name="force_update_version">A new version of this app is now available. An upgrade is compulsory to proceed further.</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string name="pdf_generation">PDF - Generation : Alert</string>
+    <string name="pdf_generation_msg">PDF can be generated only in English language. Please change your language (top right corner at home screen) and try again.</string>
+
+
+    <string name="modify">Modify</string>
+    <!-- Logging messages-->
+    <string name="add_gp_warning">Fill GP Survey Data - Alert</string>
+    <string name="add_gp_error">Fill GP Survey Data : Error</string>
+    <string name="add_gp_info">Fill GP Survey Data : Info</string>
+    <string name="add_gp_msg1">Do you really want to submit the data.</string>
+    <string name="add_gp_msg2">Any unsaved data will be lost.\nDo you want to continue??</string>
+    <string name="add_gp_msg3">Some error occurred. \n Please try again</string>
+    <string name="add_gp_msg4">Successfully saved.</string>
+    <string name="add_gp_village_completed">This Village is already completed !!</string>
+    <string name="msg_select_village">Select Village</string>
+    <string name="msg_invalid_total_area">Invalid Total Area !!</string>
+    <string name="msg_invalid_net_area">Invalid Net Area !!</string>
+    <string name="msg_invalid_unirrigated_area">Invalid Unirrigated Area !!</string>
+    <string name="msg_invalid_irrigated_area">Invalid Irrigated Area !!</string>
+    <string name="msg_invalid_farm_activity">Invalid Farm Activity !!</string>
+    <string name="msg_invalid_non_farm_activity">Invalid Non Farm Activity !!</string>
+
+    <string name="change_password_error">Change Password : Error </string>
+    <string name="change_password_info">Change Password : Info </string>
+    <string name="enter_user_password">Please enter user password !!</string>
+    <string name="enter_old_user_password">Please enter old user password !!</string>
+    <string name="enter_new_user_password">Please enter new user password !!</string>
+    <string name="enter_confirm_user_password">Please enter confirm user password !!</string>
+    <string name="old_password_not_match">Wrong Old Password !!</string>
+    <string name="confirm_password_not_match">Password and confirm Password do not match !!</string>
+    <string name="password_msg_validation_1">Password length allowed between 8 to 15 and must contain atleast 1 capital letter, 1 number and 1 special character(allowed characters are #, ?, !, @, $, %, ^, &amp; , *, - ).</string>
+    <string name="password_msg_validation_2">Password should not contain any part(3 letter sequence) of the user id</string>
+    <string name="password_msg_3">New Password should not be same as previous passwords !!</string>
+    <string name="password_msg_2">Password has changed successfully.</string>
+
+    <string name="forgot_password_error">Forgot Password : Error </string>
+    <string name="forgot_password_info">Forgot Password : Info </string>
+    <string name="empty_email_mob">Please enter email id or mobile</string>
+    <string name="invalid_email_mob">Enter valid email id or mobile</string>
+    <string name="enter_otp">Please enter OTP</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="otp_sent_to_mobile">OTP(One time Password) has been sent to your registered mobile and email.\n Kindly enter the OTP.</string>
+    <string name="enter_password">Please enter new user password</string>
+
+    <string name="installation_error">Installation : Error </string>
+    <string name="allow_wifi_imei">Please allow either WIFI or IMEI to install application successfully.</string>
+    <string name="installation">Installation</string>
+    <string name="not_available">Not Available</string>
+    <string name="my_profile_error">My Profile : Error</string>
+
+    <string name="please_wait">Please wait...</string>
+    <string name="auto_read_otp_fail">Unable to detect OTP.\nPlease enter mannually.</string>
+
+
+    <string name="app_detail_info">App - Detail : Info</string>
+    <string name="app_detail_error">App - Detail : Error</string>
+    <string name="app_detail_name">Name : </string>
+    <string name="app_detail_version">\n\n Version : </string>
+    <string name="app_detail_msg_1">Unable to show app details. \n Please try again.</string>
+
+    <string name="device_detail_info">Device - Detail : Info</string>
+    <string name="device_detail_version">Android Version : </string>
+    <string name="device_detail_api_level">\n\nAPI Level : </string>
+    <string name="device_detail_device">\n\nDevice : </string>
+    <string name="device_detail_model">\n\nModel : </string>
+    <string name="device_detail_product">\n\nProduct : </string>
+
+    <string name="add_gp_msg_get_data">Please get base data.</string>
+
+    <string name="get_data_warning">Get base data : Alert</string>
+    <string name="get_data_info">Get base data : Info</string>
+    <string name="get_data_error">Get base data : Error</string>
+    <string name="get_data_msg_download">Once data is downloaded, this Gp will be assigned to you.
+                        \n New GP can be changed only after completion of all villages in this GP.\n
+                        \n\nDo you want to continue ?</string>
+    <string name="get_data_msg_already_present">Data is already present.</string>
+    <string name="get_data_msg_success">Data is successfully retrieved.</string>
+    <string name="get_data_msg_failure">Error occurred while retriving data.\nPlease try again.</string>
+
+
+    <string name="export_warning">Export Offline : Alert</string>
+    <string name="export_info">Export Offine : Info</string>
+    <string name="export_msg_no_data">No Gram Panchayat data to be exported on this device</string>
+    <string name="export_info_submit_village">Please final submit all the villages before export.</string>
+    <string name="export_info_warning_msg">It is advised that the data should be uploaded online directly to the server using the \'upload Online\' functionality.
+            \n\n The \'Export\' functionality is provided to create offline data file in the local mobile at location
+        \"File (Manager/Explorer)/internal_storage/mission_antyodaya\"
+    \n You will be required to transfer the offline file to a broadband connected machine and upload these files to the server using the URL \"http://missionantyodaya.nic.in\".
+    \n\nDo you want to continue exporting data to a offline file?</string>
+    <string name="export_msg_success">Db file exported successfully</string>
+    <string name="export_msg_error_export">Some error ocurred while exporting file.</string>
+
+    <string name="show_gp_data_info">Show GP Data : Info</string>
+    <string name="show_gp_data_msg_no_data">No survey data is available for preview</string>
+
+    <string name="change_gp_info">Change Gram Panchayat : Info</string>
+    <string name="change_gp_warning">Change Gram Panchayat : Alert</string>
+    <string name="change_gp_error">Change Gram Panchayat : Error</string>
+    <string name="change_gp_msg_submit_village">Please final submit all the villages before Changing Gram Panchayat.</string>
+    <string name="change_gp_msg_confirmation">PDF for GP has been saved in folder GP_Pdf of your device\'s internal storage
+                \nYou can retreive it using File (Manager/Explorer)/internal_storage/GP_Pdf.
+                \nData for all not- uploaded villages of current GP have been uploaded to the server.
+                \nOnce you change the GP, the current GP data will be no longer available on this mobile / tab.
+                \n\nDo you want to change new GP ?</string>
+    <string name="select_db">Please select Development block.</string>
+    <string name="select_gp">Please select gram panchayat.</string>
+    <string name="change_gp_msg_success">Gram Panchayat has successfully changed.</string>
+    <string name="change_gp_msg_failure">Some error occurred while changing Gram Panchayat.\n Please try again.</string>
+
+    <string name="generate_pdf_info">Generate Pdf : Info</string>
+    <string name="generate_pdf_error">Generate Pdf : Error</string>
+    <string name="generate_pdf_warning">Generate Pdf : Alert</string>
+    <string name="generate_pdf_msg_submit_village">Please final submit all the villages before generating PDF.</string>
+    <string name="generate_pdf_msg_upload_village">Please upload all the villages before generating PDF.</string>
+
+    <string name="generate_pdf_msg_no_data">No Village data exists on this device.</string>
+    <string name="generate_pdf_msg_storage_permission">Please provide storage permission for generating PDF.</string>
+    <string name="generate_pdf_view_failure">Unable to open pdf file view. \nKindly open it from File (Manager/Explorer)/internal_storage/GP_Pdf</string>
+    <string name="generate_faq_pdf_view_failure">Unable to open pdf file view. \nKindly open it from File (Manager/Explorer)/internal_storage/GP_Pdf/FAQs.pdf</string>
+
+    <string name="logout_error">Logout : Error</string>
+
+    <string name="sync_info">Sync GP Data : Info</string>
+    <string name="sync_error">Sync GP Data : Error</string>
+    <string name="sync_warning">Sync GP Data : Alert</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="not_applicable">NA</string>
+    <string name="fathername">Father\'s Name</string>
+
+    <string name="app_error">App : Error </string>
+    <string name="member_status">Member Status</string>
+
+    <string name="no_records_found">No Records Found !!</string>
+    <string name="total_records_found">Total Records Found : </string>
+
+    <string name="approval_info">Approval : Info</string>
+    <string name="approval_error">Approval : Error</string>
+    <string name="approval_warning">Approval : Alert</string>
+    <string name="mothername">Mother\'s Name</string>
+    <string name="search_resident_warning">Search Resident : Warning</string>
+    <string name="get_schemeid_list">Get Scheme ID List</string>
+    <string name="house_completed">All House completed !!!</string>
+    <string name="search_msg_no_data">Please get base data.</string>
+    <string name="resident_member_warning">Resident Member : Warning</string>
+    <string name="resident_member_info">Resident Member : Info</string>
+    <string name="resident_member_error">Resident Member : Error</string>
+    <string name="enumeration_confirmation">Do you really want to start enumeration ?</string>
+    <string name="member_id">Member ID</string>
+    <string name="individual_data_info">Individual Data : Info</string>
+    <string name="individual_data_error">Individual Data : Error</string>
+    <string name="individual_data_warning">Individual Data : Warning</string>
+    <string name="head_of_house">Select Head of house</string>
+    <string name="existing">Existing</string>
+    <string name="new_member">New</string>
+    <string name="house_migrated">House Migrated Out</string>
+    <string name="skip_household">Skip Household</string>
+    <string name="select_reason">Select Reason for skip Household</string>
+    <string name="household_finalized_msg">Once household finalized, the information could not change again, Please check and submit carefully.\n Do you want to continue ?</string>
+    <string name="saveasdraft">Save draft</string>
+    <string name="lock_member_data">Lock member data</string>
+    <string name="died">Died</string>
+    <string name="mo">Migrated</string>
+    <string name="av">Available</string>
+    <string name="get_schemeid">Get Scheme ID</string>
+    <string name="no_record_found">No Records Found</string>
+    <string name="add_household_error">Add new household : Error</string>
+    <string name="enter_scheme_id">Please scheme ID !!</string>
+    <string name="add_more_member">Do you want to add more member ?</string>
+    <string name="something_wrong">Something went wrong</string>
+    <string name="complete_pending_members">Kindly complete pending members first by clicking on the member entry</string>
+    <string name="family_migrated_out">Family Migrated Out</string>
+    <string name="family_migrated_out_successfully">Family migrated out successfully !!</string>
+    <string name="select_reason_for_house_skip">select reason to skip house.</string>
+    <string name="house_skipped_success">House Skipped successfully !!</string>
+    <string name="member_status_update_success">Member status updated successfully !!</string>
+    <string name="member_status_update_failure">Member status not updated !!</string>
+    <string name="submit_member_msg">You will not be able to edit this member data any more.\nDo you want to continue ?</string>
+    <string name="update_previous_data">Please update previous data.</string>
+    <string name="cant_go_back_before_enumeration_complete">You can not go back till all members be enumerated.</string>
+    <string name="section1">Section - 1 : Housing/Dwelling</string>
+    <string name="materialofwall">Predominant material of wall of dwelling room</string>
+    <string name="materialofroof">Predominant material of roof of dwelling room</string>
+    <string name="spinner_heading_ownership_status">-- Select Owner status --</string>
+    <string name="spinner_heading_material_of_wall">-- Select Material of wall --</string>
+    <string name="spinner_heading_material_of_roof">-- Select Material of roof --</string>
+    <string name="ownership_status">Ownership status of this house</string>
+    <string name="dwelling_rooms">Number of dwelling rooms exclusively in possession of this houseld</string>
+    <string name="sheltersless"> Shelterless</string>
+    <string name="main_source_household">Main source of household income from</string>
+    <string name="basic_facilities">Section - 3 : Basic Facilities*</string>
+    <string name="drainage_facility">Drainage Facility</string>
+    <string name="piped_drinking_water">Availability of piped drinking water</string>
+    <string name="latrine_facility">Availability of Latrine facility</string>
+    <string name="source_of_lighting">Main source of lighting</string>
+    <string name="seprate_room_as_kitchen">Separate Room as kitchen</string>
+    <string name="main_source_of_lighting">Main source of lighting – electricity, Kerosene, Solar, Other oil, Any other, No lighting</string>
+    <string name="fuel_used">Fuel used for cooking</string>
+    <string name="house_connected">Whether House is connected with Road/Lane/Path</string>
+
+    <string name="search_user_info">Search User : Info</string>
+    <string name="search_user_error">Search User : Error</string>
+    <string name="search_user_warning">Search User : Alert</string>
+    <string name="msg_select_option">Please select options !!</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="search_by_id">Search by id</string>
+    <string name="aadhaar_status">Aadhaar Status</string>
+    <string name="yob">Year of birth</string>
+    <string name="scheme_id_val">Scheme ID Value</string>
+    <string name="scheme_id">Scheme ID </string>
+    <string name="manrega_id">Mgnrega \nID</string>
+    <string name="pmayi">PMAY \nID </string>
+    <string name="pmay">PMAY ID</string>
+    <string name="manrega">Mgnrega ID</string>
+    <string name="household">HouseHold</string>
+    <string name="skipped_household">Skipped Households</string>
+    <string name="population">Population</string>
+
+    <string name="enter_name">Please enter name !!</string>
+    <string name="enter_email_id">Please enter email id !!</string>
+    <string name="enter_mobile_no">Please enter mobile no !!</string>
+    <string name="select_state">Please select state !!</string>
+    <string name="select_district">Please select district !!</string>
+    <string name="download">Download data</string>
+    <string name="home_option_get_updated_village_pdf">Get Updated Village PDF</string>
+    <string name="search_resident_info">Search Resident : Info</string>
+    <string name="add_household_info">Add new household : Info</string>
+    <string name="add_household_warning">Add new household : Warning</string>
+    <string name="household_enumeration_pending">Enumeration for a household is pending. \n Kindly enumerate the pending household</string>
+
+    <string name="ma_info">Mission Antyodaya : Info</string>
+    <string name="ma_error">Mission Antyodaya : Error</string>
+    <string name="ma_warning">Mission Antyodaya : Alert</string>
+    <string name="not_authorized">You are not authorized to use this application</string>
+    <string name="home_option_download_village_data">Download Village PDF</string>
+    <string name="home_option_search">Search</string>
+
+    <string name="get_data">Get data : Download</string>
+    <string name="household_status">Household Status</string>
+
+    <string name="home_option_add_gp">Fill GP Survey Data</string>
+    <string name="home_option_get_data">Get Base Data</string>
+    <string name="home_option_show_gp">Show GP Data</string>
+    <string name="home_option_upload_data">Upload Online</string>
+    <string name="home_option_export">Export Offline</string>
+    <string name="home_option_generate_pdf">Generate PDF</string>
+    <string name="home_option_change_gp">Change GP</string>
+    <string name="home_option_user_approval">User Approval</string>
+    <string name="home_option_search_user">Search User</string>
+    <string name="outside">Whether outside Road/Lane/Path illuminated with street light</string>
+    <string name="other_house">Section - 4 : Health Facilities*</string>
+    <string name="centre_accessible">Is the PHC/Sub centre accesible</string>
+    <string name="children_registration">Children aged  0-3 years registered under ICDS</string>
+    <string name="types_liability">Type of liability/ Range of Liability</string>
+    <string name="benefit_govt">Any unemployment benefit from govt</string>
+    <string name="section4">Section 5A : Does the household own the following assets</string>
+    <string name="section5">Section 5</string>
+
+    <string name="ration_card">Ration Card</string>
+    <string name="have_ration_card">Having RationCard?</string>
+    <string name="mobile_phone">Telephone/Mobile Phone</string>
+    <string name="refrigerator">Refrigerator</string>
+    <string name="air_conditioner">Air Conditioner</string>
+    <string name="washing_machine">Washing Machine</string>
+    <string name="smartphone">Smartphone</string>
+    <string name="computer_laptop">Computer/Laptop</string>
+
+    <string name="records_added_successfully">Records added successfully</string>
+    <string name="exit_confirmation">Do you really want to exit application?</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="mechanized_aggri_equipment">Mechanized agricultural equipment</string>
+    <string name="vehicle_registration">Motorised Two/Three/Four Wheelers or Motorised Fishing Boat requiring registration</string>
+    <string name="section4b">Section 5B :Household Liability*</string>
+    <string name="agriculture_loan">Is household having any Liability like agriculture loan.</string>
+    <string name="agriculture_loan_waiver">Any agricultural loan waiver received?</string>
+    <string name="section5a">Section 6A : Land Owned*</string>
+    <string name="own_land">Own any land (excluding homestead)?</string>
+    <string name="unirrigatedland">Total un-irrigatedland (in acres)</string>
+    <string name="with_assured_irrigation">With assured irrigation for two crops (in acres)</string>
+    <string name="other_irrigated">Other irrigated land (in acres)</string>
+    <string name="irrigation_euipment">Irrigation equipment (including diesel/kerosene/electric pumpset/sprinkler/Drip irrigation system, etc)</string>
+    <string name="kisan_credit_card">Kisan Credit Card with credit of Rs. 50,000 or above</string>
+    <string name="household_data">Household Data</string>
+    <string name="individual_data">Individual Data</string>
+    <string name="manual_scavenger">Manual Scavenger</string>
+    <string name="section5b">Section 6B : Other Assets Owned</string>
+    <string name="getting_free_meal">Getting free meal as nututritional support for pregrant women and lactating mothers where child age is 0-6 months</string>
+    <string name="nutritional_support">Getting Rs. 6000 as nututritional support for lactating mothers where child age is 0-6 months</string>
+    <string name="aanganwadi_nutritional_support">Child age from 6 months to 6 years appropriate meal through the local aanganwadi to meet nurtritional <support></support></string>
+    <string name="midday_mealpport">child age from 6 to 14 years one mid day meal (everyday except on school holiday)"</string>
+    <string name="food_gain">Weather 5kg per month food gain is being accessed under PDSA</string>
+    <string name="nfsa">Section-7 : NFSA*</string>
+    <string name="range_of_liability">Type of liability/ Range of Liability In HH</string>
+    <string name="household_contact">Houshold Contact numbers</string>
+    <string name="tractor">Tractor</string>
+    <string name="thrasher">Thrasher</string>
+    <string name="others">Others</string>
+    <string name="others_section">Section 8:Others</string>
+    <string name="postoffice">Post Office</string>
+    <string name="postoffice_availability">Availability of post office account</string>
+   <string name="primtive_tribal_group">Primitive Tribal Group</string>
+    <string name="legally_released_bonded_labour">Legally Released Bonded Labour</string>
+    <string name="select_manual_scavenger">Manual Scavenger</string>
+    <string name="select_seprate_room_as_kitchen">Separate Room as kitchen</string>
+    <string name="select_primtive_tribal_group">Primitive Tribal Group</string>
+    <string name="select_legally_released_bonded_labour">Legally Released Bonded Labour</string>
+    <string name="selected_manual_scavenger">Manual Scavenger</string>
+    <string name="ration_card_no">Ration Card No</string>
+    <string name="income_source">Section - 2 : Main source of household income from</string>
+    <string name="section_address">Address Section</string>
+    <string name="household_data_error">Household Data : Error</string>
+    <string name="save_household_error">Save Household : Error</string>
+
+    <string name="login_info">Login : Info</string>
+    <string name="login_error">Login : Error</string>
+    <string name="login_warning">Login : Alert</string>
+    <string name="incorrect_user_id_or_password">Incorrect User ID or Password !!</string>
+    <string name="login_msg_lock_1">This device is currently locked with user {</string>
+    <string name="login_msg_lock_2">If you want to discard the data of existing user and lock the device to new user then please login as another user. !!</string>
+    <string name="error_occurred">Error occurred</string>
+
+    <string name="deregister_info">Remove Registration : Info</string>
+    <string name="deregister_error">Remove Registration : Error</string>
+    <string name="deregister_warning">Remove Registration : Alert</string>
+    <string name="deregister_msg_success">User is successfully removed. \nKindly register again to login.</string>
+
+    <string name="mobile_verification_success">Mobile Verification Completed.</string>
+    <string name="error"> : Error</string>
+    <string name="info"> : Info</string>
+    <string name="warning"> : Alert</string>
+    <string name="permission_necessary">"Permission necessary"</string>
+    <string name="external_storage_permission_necessary">External storage permission is necessary</string>
+
+    <string name="register_info">Registration : Info</string>
+    <string name="register_error">Registration : Error</string>
+    <string name="register_warning">Registration : Alert</string>
+    <string name="register_success_wait_approval">You have successfully registered.\nPlease wait for Approval.\nYou can login after confirmation message of Approval.</string>
+    <string name="register_discard">Do you want to discard registration process ?</string>
+
+    <string name="msg_age_lt_18_error">Age must be greater than 18.</string>
+    <string name="invalid_email_id">Please enter valid Email Id.</string>
+    <string name="invalid_mob_no">Please enter valid Mobile Number.</string>
+    <string name="empty_first_name">Please enter first name.</string>
+    <string name="select_dob">Please select Date of birth.</string>
+    <string name="select_id_proof">Please select Id Proof.</string>
+    <string name="enter_id_number">Please enter Id Number.</string>
+    <string name="select_roles">Please select roles.</string>
+    <string name="invalid_official_email">Please enter valid official Email Id.</string>
+    <string name="invalid_official_mob">Please enter valid official contact number.</string>
+    <string name="msg_register_success">You have successfully registered.\nPlease wait for Approval.\nYou can login after confirmation message of Approval.</string>
+    <string name="app_notification">Mission Antyodaya : Notification</string>
+
+    <string name="home_option_report">Report</string>
+    <string name="report">Report of All State</string>
+    <string name="total_gp">Total Gram Panchayat</string>
+    <string name="total_active_gpu">Total Active GP User</string>
+    <string name="total_otp_login_c">Total OTP Login Completed</string>
+    <string name="total_gp_downloaded">Total GP Downloaded</string>
+    <string name="total_gp_uploaded">Total GP Uploaded</string>
+    <string name="total_gp_pdf_generated">Total GP PDF Generated</string>
+    <string name="total_gp_data_corrected">Total GP Data Corrected</string>
+
+    <string name="adm_reports_info">Reports : Info</string>
+    <string name="adm_reports_error">Reports : Error</string>
+    <string name="adm_reports_warning">Reports : Alert</string>
+
+    <string name="otp_error">We are unable to send OTP on your registered mobile number \nPlease try again later.</string>
+    <string name="otp_error_header">OTP : Error</string>
+    <string name="otp_info">OTP : Info</string>
+    <string name="master_error">Master - Data : Error</string>
+    <string name="master_loading_issue">Master data loading issue. \nPlease try again later.</string>
+    <string name="please_input">Please input the value.</string>
+    <string name="input_error">Input : Error</string>
+    <string name="enter_userid_for_deregistration">Please enter mobile number for de registration.</string>
+    <string name="enter_user_id">Please enter user Id</string>
+    <string name="otp_validate_success">User OTP verification is successful.</string>
+    <string name="register_otp_validate_success">Your verification process has been succesfully completed.\n\n Please wait for Approval.\n\n You can login after getting confirmation message of Approval.</string>
+    <string name="register_success_ask_validation">You are successfully registered.\n\n Please verify your contact details to complete verification process.\n\n Verification is required to login.</string>
+    <string name="user_mobile_updated">User mobile no. has been successfully updated.\n Kindly continue for verification.</string>
+    <string name="no_base_data_available">NA</string>
+    <string name="msg_uninhabitate_village">This village is uninhabited.</string>
+    <string name="err_call_permission_denied">Call permssion denied.</string>
+    <string name="import_success">File imported successfully !!</string>
+    <string name="import_failure">File not found !!</string>
+    <string name="generate_pdf_font_file_missing">Font is not available so pdf can generate only english language</string>
+    <string name="generate_pdf_english">Generate in English</string>
+    <string name="generate_pdf_hindi">Generate in Hindi</string>
+    <string name="download_pdf_hindi">Download PDF in Hindi</string>
+
+    <string name="download_font">Download Font</string>
+    <string name="invald_token_msg">Your current session has expired. \n Kindly login again to continue. </string>
+    <string name="welcome">Welcome </string>
+    <string name="sub_district">Sub District</string>
+    <string name="base_distance">Distance - </string>
+    <string name="census_2011_data">Census 2011 Data - </string>
+    <string name="ma_2017_data">MA 2017 Data - </string>
+    <string name="ma_2018_data">MA 2018 Data - </string>
+    <string name="city">City</string>
+    <string name="spinner_heading_sub_district">-- Select Sub District --</string>
+    <string name="add_gp_village_uninhabitated">This Village is un-inhabited. Kindly select another village.</string>
+    <string name="get_data_msg_sync_villages">Do you want to update villages on your device.
+                        \n Once you update villages, any extra villages and its data will be deleted from your device.\n
+                        \n\nDo you want to continue ?</string>
+    <string name="get_data_no_data_mismatch">No villages are mismatched on your device.</string>
+    <string name="update_data_warning">Update base data : Alert</string>
+    <string name="update_data_info">Update base data : Info</string>
+    <string name="update_data_error">Update base data : Error</string>
+    <string name="update_data_msg_no_modification">There are no modification in the current data.</string>
+    <string name="generate_faq_pdf_msg">PDF is downloaded in GP_Pdf_Faq Folder.</string>
+    <string name="activate">Activate</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="select_sub_district">Please select sub-district !!</string>
+    <string name="no_data_present">No data present !!</string>
+    <string name="name_length_lt_3">Minimum 2 letters required for search !!</string>
+    <string name="home_option_uninhabitat_village">Declare village as un-inhabitat village</string>
+    <string name="uninhabitat_village_error">Un-inhabitat village : Error</string>
+    <string name="uninhabitat_village_info">Un-inhabitat village : Info</string>
+    <string name="uninhabitat_village_heading">Declare village as un-inhabitat village</string>
+    <string name="uninhabitat_village_msg">Please select village which needs to be converted to un-inhabitat village</string>
+    <string name="mismatch_title_gender">Title and gender do not match.</string>
+    <string name="min_length_first_name">Minimum length for first name is 2.</string>
+    <string name="mobile_verification_success_wait_approval">Mobile verification is completed. \n Please wait for approval.</string>
+
+    <string name="user_approval">User Approval</string>
+    <string name="search_user">Search User</string>
+    <string name="msg_user_rejected">User is already rejected</string>
+    <string name="ma_version_update">Mission Antyodaya - Alert : Update</string>
+    <string name="later">Later</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="update_now">Update now</string>
+    <string name="pdf_title">Mission Antyodaya Baseline Survey 2019</string>
+    <string name="ma_2018_status">Survey 2018\nStatus</string>
+    <string name="feedback">Feedback</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="feedback_max_length">Feedback (max length = 200 characters)</string>
+    <string name="verified">(verified)</string>
+    <string name="not_verified">(not verified)</string>
+    <string name="open_reports_failure">Unable to open reports. \n Please try later.</string>
+
+    <string name="home_option_reset_data">Reset Data</string>
+    <string name="home_option_sync_uploaded_villages">Sync uploaded villages</string>
+
+    <string name="reset_data_info">Reset : Info</string>
+    <string name="reset_data_error">Reset : Error</string>
+    <string name="reset_data_warning">Reset : Alert</string>
+    <string name="reset_data_msg_confirmation">On resetting, all mission antyodaya app data will be removed from this device. \n Do you want to continue.</string>
+    <string name="reset_data_msg_success">Data has been reset.</string>
+    <string name="login_as_another_user">Login as another user</string>
+    <string name="login_another_user_msg_confirmation">This device is currently locked with user { %1$s }. \n If you opt login as another user,
+    all previous user app related data on this device will be removed. \n \n Do you want to login as another user??</string>
+    <string name="enum_block_status">Enumerated Block Status</string>
+    <string name="gps_location_not_retrievable">Unable to get gps location.\n Please try to move out.</string>
+    <string name="gps_cancel_submit_data_msg">Kindly allow GPS to proceed. \n Otherwise any modified data will not be saved. </string>
+    <string name="allow_gps">Allow GPS </string>
+    <string name="delete_data_and_proceed">Proceed anyway </string>
+    <string name="home_error">Home : Error </string>
+    <string name="feedback_error">Feedback : Error </string>
+    <string name="show_gp_data_error">Show GP Data : Error</string>
+    <string name="get_data_gp_already_uploaded">All the villages of this Gram Panchayat are already uploaded on server.\n
+        Do you want to download the GP data ??</string>
+    <string name="get_data_gp_few_villages_uploaded">Some villages of this Gram Panchayat are already uploaded on server.\n
+        Do you want to download the GP data ??</string>
+    <string name="get_data_gp_all_uninhabitated">All villages in this Gram Panchayat are inhabited.\n
+            Do you want to download the GP data ??</string>
+    <string name="download_gp_data">Download data</string>
+    <string name="is_uploaded">Is uploaded</string>
+    <string name="ts_uploaded">Uploaded Date</string>
+    <string name="uploaded_from_app_or_portal">Uploaded from app or portal</string>
+    <string name="uploaded_by">Uploaded by</string>
+    <string name="is_verified">Is verified</string>
+    <string name="ts_verified">Verified Date</string>
+    <string name="verified_from_app_or_portal">Verified from app or portal</string>
+    <string name="verified_by">Verified by</string>
+    <string name="verified_hhds">Households verified</string>
+    <string name="select_spp_mode">Select App Mode</string>
+    <string name="training_mode">Training</string>
+    <string name="actual_mode">Actual Data Collection</string>
+    <string name="change_app_mode">Change app mode</string>
+    <string name="switch_to_training_mode">Switch to training mode</string>
+    <string name="switch_to_actual_mode">Switch to actual mode</string>
+    <string name="app_warning">MA App : Alert</string>
+    <string name="change_mode_training_msg">Training mode is for the training purpose of field officers only. \n The user(s) created or
+        data uploaded during training mode will be discarded while switching to actual mode.
+        \n\n On changing mode, all your MA app related data(if exists) will be deleted from device.
+        \n Do you want to continue ??</string>
+    <string name="change_mode_actual_msg">On changing mode, all your MA app related data will be deleted from device.
+        \n Do you want to continue ??</string>
+    <string name="home_info">Home : Info </string>
+    <string name="feedback_info">Feedback : Info </string>
+    <string name="open_feedback_failure">Unable to open feedback. \n Please try later.</string>
+    <string name="msg_total_pop_calc_transgender">{ %1$d } no. of population is Transgender !!</string>
+    <string name="password_hint_caption">( Password hint )</string>
+    <string name="password_hint">Password hint</string>
+    <string name="is_send_to_server">Is data uploading under progress</string>
+    <string name="ts_send_to_server">Date since data uploading is under progress</string>
+    <string name="upload_pending_households">Households whose uploading is under progress</string>
+    <string name="uploaded_hhds">Households uploaded to server</string>
+    <string name="date_of_exporting">Date of Exporting</string>
+    <string name="not_uploaded">Not Uploaded/Exported</string>
+    <string name="hhd_verified">(verified)</string>
+    <string name="hhd_uploaded">(uploaded)</string>
+    <string name="hhd_send_to_server">(uploading under progress)</string>
+    <string name="hhd_completed">(completed)</string>
+    <string name="hhd_draft">(saved as draft)</string>
+    <string name="hhd_uninhabitated">(uninhabited)</string>
+    <string name="hhd_not_started">(not started)</string>
+    <string name="password_hint_caption_1">( Password must contain...</string>
+    <string name="password_hint_caption_2">more</string>
+    <string name="incorrect_password">Incorrect password</string>
+    <string name="uninhabitat_villages">Uninhabitat villages</string>
+    <string name="not_started_hhds">Not started households</string>
+    <string name="save_as_draft_hhds">Save as draft households</string>
+    <string name="household_details">Household Details</string>
+    <string name="change_gp_msg_upload_villages">Some of the villages in this GP are still not uploaded. \n
+        To change GP, all the villages in current GP need to be uploaded. \n
+        Kindly click \'Get base data\' after 15 minutes to refresh the latest status of villages. </string>
+    <string name="change_gp_message_confirmation">PDF for GP has been saved in folder GP_Pdf of your device\'s internal storage
+                \nYou can retreive it using File (Manager/Explorer)/internal_storage/GP_Pdf.
+                \nOnce you change the GP, the current GP data will be no longer available on this mobile / tab.
+                \n\nDo you want to change new GP ?</string>
+    <string name="get_data_survey_data_updated">Survey data has been refreshed on your device. \n Kindly check \'Show Gp Data\'</string>
+    <string name="feedback_warning">Feedback : Alert</string>
+    <string name="latitude">Latitiude</string>
+    <string name="longitude">Longitude</string>
+    <string name="sync_msg_no_data">No Gram Panchayat is pending for uploading</string>
+    <string name="import_info">Import : Info</string>
+    <string name="import_error">Import : Error</string>
+    <string name="msg_total_pop_mismatch_base_pop_2011">Total population is more/less than 20% of base population !!</string>
+    <string name="msg_total_pop_mismatch_base_pop_not_2011">Total population is more/less than 5% of base population !!</string>
+    <string name="msg_total_hhd_mismatch_base_hhd_2011">Total household is more/less than 20% of base household !!</string>
+    <string name="msg_total_hhd_mismatch_base_hhd_not_2011">Total household is more/less than 5% of base household !!</string>
+    <string name="msg_total_area_mismatch_base_area">Total area is different of base area !!</string>
+    <string name="login_msg_lock">This device is currently locked with user { %1$s }. \nIf you want to discard the data of existing user and lock the device to new user then please do login as another user. !!</string>
+    <string name="home_option_upload_pdf">Upload Gram Sabha Validated Copy</string>
+    <string name="msg_pincode_length">Length of pincode should be 6!!</string>
+    <string name="msg_valid_population">Please enter valid Population. \nTotal population >= male + female</string>
+    <string name="msg_irr_unirr_gt_total_area">Total Unirrigated Land Area + Area irrigated cannot be greater than Total Cultivable Area !!</string>
+    <string name="ma_2019_status">Survey 2019\nStatus</string>
+    <string name="home_option_import">Import Data</string>
+    <string name="home_option_backup">Backup Data</string>
+    <string name="backup_warning">Backup : Alert</string>
+    <string name="backup_info">Backup : Info</string>
+    <string name="backup_error">Backup : Error</string>
+    <string name="import_warning">Import : Alert</string>
+    <string name="backup_msg_no_data">No data for back up.</string>
+    <string name="backup_msg_failure">Some error ocurred while take backup of file.</string>
+    <string name="backup_msg_success">Db file backup successfully.</string>
+
+
+    <string name="import_msg_no_data">No data present</string>
+    <string name="msg_data_already_exists">Database already exist !!</string>
+    <string name="msg_storage_permissions">Please give storage permission for perform this task.\nTry again.</string>
+    <string name="install_file_manager">Please install a File Manager.</string>
+    <string name="select_file_to_upload">Select a File to Upload</string>
+
+    <string name="msg_empty_value">Empty value :  \u0020</string>
+    <string name="msg_select">Select : \u0020</string>
+    <string name="msg_select_distance">Select distance : \u0020</string>
+    <string name="msg_invalid_value">Invalid : \u0020</string>
+
+    <string name="msg_cannot_be_0">\u0020 cannot be 0 !!</string>
+    <string name="msg_cannot_be_greater_than_0">\u0020 cannot be greater than 0 !!</string>
+
+    <string name="msg_cannot_be_greater_than">{ %1$s } cannot be greater than { %2$s }</string>
+    <string name="msg_cannot_be_less_than">{ %1$s } cannot be less than { %2$s }</string>
+    <string name="msg_pending_category">Kindly complete section { %1$s } to proceed and validate this section. !!</string>
+    <string name="msg_odf_sanitary_latrines">If { %1$s } is selected as { %2$s } then \n </string>
+
+    <string name="spinner_heading_farmers_collective">-- Farmers collective --</string>
+    <string name="spinner_heading_livestock_ext_services">-- Livestock ext services --</string>
+    <string name="spinner_heading_internal_pucca_road">-- Inernal Pucca Road --</string>
+    <string name="spinner_heading_common_service_centre">-- Common service centre --</string>
+    <string name="spinner_heading_public_info_board">-- Public information board --</string>
+    <string name="spinner_heading_recreational_centre">-- Recreational centre --</string>
+    <string name="spinner_heading_toilet">-- Toilet --</string>
+    <string name="spinner_heading_assembly_constituency">-- Assembly constituency --</string>
+    <string name="spinner_heading_parliament_constituency">-- Parliament Constituency --</string>
+    <string name="msg_select_pdf_type">Please select the type of PDF you want to generate</string>
+    <string name="pdf_gp_wise">Generate final PDF for Gp</string>
+    <string name="pdf_village_wise_draft">Generate draft PDF for Village</string>
+    <string name="pdf_village_wise_final">Generate final PDF for Village</string>
+    <string name="watermark_gp">Final</string>
+    <string name="watermark_village">Draft Only</string>
+    <string name="msg_village_not_found">No data for this village is found.</string>
+    <string name="msg_village_not_completed">Please final submit the village to generate PDF in this mode</string>
+    <string name="import_first_page"> Gram Sabha Validated First Page</string>
+    <string name="import_last_page">  Gram Sabha Validated Last Page</string>
+    <string name="change_first_page"> Change First Page</string>
+    <string name="change_last_page"> Change Last Page</string>
+    <string name="upload_error">Upload : Error</string>
+    <string name="upload_success">Upload : Success</string>
+    <string name="select_image">Please select image</string>
+    <string name="please_select_vill">Please select village</string>
+    <string name="msg_village_not_uploaded">The village selected is not uploaded yet.</string>
+
+    <string name="upload_pdf">Upload Pdf</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="photo_quality">Photo quality is not good.Please try again.</string>
+    <string name="invalid_unirrigated_land">Invalid unirrigated land</string>
+    <string name="invalid_assured_irrigation">invalid assured irrigation for two crops</string>
+    <string name="invalid_other_irrigated_land">invalid other irrigated land</string>
+    <string name="household_data_info">Household Data : Info</string>
+    <string name="household_data_warning">Household Data : Warning</string>
+    <string name="household_data_msg_success">Household successfully saved.</string>
+    <string name="add_household_back_btn_alert">The changes made in current form have not been saved and will be lost.\n Do you want to continue ?</string>
+    <string name="msg_empty_pincode">Empty pincode !!</string>
+    <string name="msg_empty_house_number">Empty house number !!</string>
+    <string name="msg_empty_street">Empty street !!</string>
+
+    ////Option Menu
+    <string name="home">Home</string>
+    <string name="change_language">Change Language</string>
+    <string name="device_detail">Device Detail</string>
+    <string name="about_app">About App</string>
+    <string name="support_feedback">Support/Feedback</string>
+    <string name="faq">FAQs</string>
+    <string name="hindi_questionnaire">Hindi Questionnaire</string>
+    <string name="logout">Logout</string>
+
+    <string name="select_hhhtype">Household type can not be Houseless.If basic facilities are available.</string>
+    <string name="select_irrigation_equipment">select irrigation equipment</string>
+    <string name="select_kisan_credit_card_limit">Select kisan credit card limit</string>
+    <string name="select_children_registered_icds">Select children aged 0-3 years registered inder ICDS</string>
+    <string name="select_unemployment_benefit_govt">Select any unemployment benefit from Government</string>
+    <string name="select_free_meal">Select free meal as nutritional support for pregnant women</string>
+    <string name="select_nutritional_support">Select whether getting Rs 6000 as nutritional support for lactating mothers</string>
+    <string name="select_aanganwadi_support">select whether child age from 6months to 6 years appropriate meal through the local anganwadi to meet nuturitional support</string>
+    <string name="select_mid_day_meal">select whether child age from 6 to 14 years one mid day meal</string>
+    <string name="select_mech_equipment">Select mechanized agricuture equipment</string>
+    <string name="select_household_type">Please select household type.</string>
+    <string name="select_lighting_source">Please select main source of lighting.</string>
+    <string name="select_drinking_water">Please select availability of piped drinking water.</string>
+    <string name="select_drainage">Please select drainage facility.</string>
+    <string name="select_latrine_facility">Please select latrine facility.</string>
+    <string name="select_cooking_fuel">Please select fuel used for cooking.</string>
+    <string name="select_income_source">Please select source of household income.</string>
+    <string name="select_ration_card_status">Please select ration card status</string>
+    <string name="select_telephone">Please select type of telephone.</string>
+    <string name="select_registered_motor">Please select registered motor.</string>
+    <string name="select_refrigerator">Select Refrigerator</string>
+    <string name="select_refrigerator_lightsource">Refrigerator can not be Yes if Main source of lighting is not Electricity or Solar. </string>
+
+    <string name="select_air_conditioner">Select Air Conditioner</string>
+    <string name="select_washing_machine">Select washing machine</string>
+    <string name="select_smartphone">Select smartphone</string>
+    <string name="select_own_land">Select whether any own land?</string>
+    <string name="select_agriculture_loan">Select liability of household in any agriculture loan</string>
+    <string name="select_agriculture_loan_waiver">Select whether any agriculture loan waiver received ?</string>
+    <string name="select_liability_range">Select liability range</string>
+    <string name="select_food_gain">Select whether 5kg per month food gain is being accesed under PDSA</string>
+
+
+    <!-- Strings fixed-->
+    <string name="none">None</string>
+
+    <!-- String database-->
+    <string name="d1"> Less than 1 Km</string>
+    <string name="d2">1-2 kms</string>
+    <string name="d3">2-5 kms</string>
+    <string name="d4">5-10 Kms</string>
+    <string name="d5">More than 10 kms</string>
+    <string name="d42">10-20 kms</string>
+    <string name="d43">More than 20 kms</string>
+
+    <string name="d6">Closed Drainage</string>
+    <string name="d7">Open Pucca Drainage Covered with Tiles Slabs</string>
+    <string name="d8">Open Pucca Drainage Uncovered</string>
+    <string name="d9">Open Kuccha Drainage</string>
+    <string name="d10">None</string>
+
+    <string name="d11">1-4 hrs</string>
+    <string name="d12">4-8 Hrs</string>
+    <string name="d13">8-12 Hrs</string>
+    <string name="d14">>12 hrs</string>
+    <string name="d15">None</string>
+
+    <string name="d16">Mandis</string>
+    <string name="d17">Regular market</string>
+    <string name="d18">Weekly Haat </string>
+    <string name="d19">None</string>
+
+    <string name="d20">CHC</string>
+    <string name="d21">PHC</string>
+    <string name="d22">Sub Centre</string>
+    <string name="d23">None</string>
+
+    <string name="d24">100% habitations covered</string>
+    <string name="d25">50 to 100% habitations covered</string>
+    <string name="d26"> Less than 50% habitation covered</string>
+    <string name="d27">only one habitation is covered</string>
+    <string name="d28">None</string>
+
+    <string name="d29">Bus</string>
+    <string name="d30">Van</string>
+    <string name="d31">Auto</string>
+    <string name="d32">None</string>
+
+    <string name="d33">Primary School</string>
+    <string name="d34">Middle School</string>
+    <string name="d35">High School</string>
+    <string name="d36">Senior Secondary School</string>
+    <string name="d37">None</string>
+
+    <string name="d38">Landline</string>
+    <string name="d39">Mobile</string>
+    <string name="d40">Both</string>
+    <string name="d41">None</string>
+
+    <string name="d44">Canals</string>
+    <string name="d45">Surface water</string>
+    <string name="d46">Ground water (tube well/well/pump)</string>
+    <string name="d47">Other</string>
+
+
+    <!-- Strings not to be converted-->
+    <string name="web_service_message_identifier">message</string>
+
+
+    <string name="upload_scanned_survey">Upload Gram Sabha Validated Copy</string>
+    <string name="get_data_error_location_not_matched">Matched file for base data not found.\\n Kindly contact administrator.</string>
+    <string name="msg_disclaimer">Disclaimer: The uploaded data is yet to be verified by the Gram Sabha/Block. The data shown here is as uploaded by the enumerator authorised by the state. MoRD is not responsible for any discrepency in data reported here and the user may verify the information from other sources also if required.</string>
+    <string name="msg_upload_pdf_user_not_allowed">You are not authorized to upload the PDF of this village. \\n Only the enumerator who uploaded the data can upload the PDF</string>
+    <string name="mac_not_available">Kindly turn on your Wifi and Device Data</string>
+    <string name="imei_not_available">Kindly grant permissions to read phone status</string>
+    <string name="app_id_not_available">Unable to retreive app id</string>
+    <string name="app_version_not_available">Unable to retreive app version</string>
+    <string name="labour_budget_example">(Note:Enter amount in numbers only e.g. for 112 lakh --> enter 11200000)</string>
+    <string name="str_service_unavailable">Application could not connect with the server due to poor network or connectivity of your service provider.</string>
+    <string name="token_not_available">Fb-Tkn not avaialble</string>
+    <string name="reopen_app">Kindly reopen app</string>
+
+    /////////////////Shuv Strings///////////
+    <string name="whether_issued_ehealth_card_under_abpmjay">Whether the household has been issued E-health card under Ayushman Bharat Pradhan Mantri Jan Arogya Yojana</string>
+    <string name="whether_any_member_getting_pension_nsap">Whether any member of the household is getting pension under NSAP-National Social Assistance Program</string>
+    <string name="section_pension">If yes, please select the type of pension</string>
+    <string name="whether_any_member_worked_with_mgnrega">Whether any member of the Household has ever worked under MGNREGA</string>
+    <string name="mgnrega_job_card_no">If Yes, then provide  MGNREGA job card number</string>
+
+
+    <!--Survey questions-->
+    <string name="is_lpg_connection_available">Whether LPG gas connection is available in the Household?</string>
+    <string name="lpg_consumer_id"> Please enter LPG consumer ID</string>
+    <string name="no_of_times_refilled_in_last_one_yr">Number of times the cylider is refilled in last one year</string>
+    <string name="is_electricity_connection_available">Whether electricity connection is available in the household?</string>
+    <string name="is_led_available_under_ujala">Whether the household has LED Bulbs?</string>
+    <string name="is_any_member_have_jandhan_ac">Does any member of the household have bank Account ?</string>
+    <string name="is_hhd_enrolled_in_pmjjby">Whether the household is enrolled under PM Jeevan Jyoti Bima Yojana ?</string>
+    <string name="is_any_member_enrolled_in_pmsby">Whether any member of the household is enrolled under PM Suraksha Bima Yojana ?</string>
+    <string name="is_any_member_immunised_under_mission_indradhanush">whether any member of the household has been immunised under Mission Indra-Dhanush ?</string>
+    <string name="is_any_child_0_6_yrs_or_pregnant_woman_available">Is there any child (0-6 yrs.) or pregnant woman available in the household ?</string>
+    <string name="is_any_member_registered_in_icds">If yes, whether any member of the household registered in ICDS ?</string>
+    <string name="services_availed_under_icds">If Yes, please check the services availed under ICDS</string>
+    <string name="is_hhd_availed_nutrition_benefits_under_icds">If No, whether the household has ever availed the nutrition benefits under ICDS?</string>
+    <string name="type_of_house_used_for_living">What is the type of House used by the household for living?</string>
+    <string name="pmayg_status">If Yes, please provide the status</string>
+    <string name="pmayg_id">Please enter PMAY-G ID</string>
+    <string name="family_health_card_number">If registered in Ayushman Bharat PMJAY, Please enter family Health card Number.</string>
+    <string name="is_any_member_getting_pension_under_nsap">Whether any member of the household is getting pension under NSAP-National Social Assistance Program</string>
+    <string name="type_of_pensions">If yes, please select the type of pension</string>
+    <string name="is_any_member_ever_worked_under_mgnrega">Whether any member of the Household has ever worked under MGNREGA</string>
+    <string name="mgnrega_job_card_number">If Yes, then provide  MGNREGA job card number</string>
+    <string name="no_of_days_worked_under_mgnrega_in_last_one_yr">If Yes, number of days worked under MGNREGA during last one year</string>
+    <string name="is_any_member_undergone_training_under_any_skill_dev_prog">Whether any member of the household undergone training under any Skill development/orientation scheme ?</string>
+    <string name="trainees_skill_dev_prog">Number of trainees trained under any Skill Development Program</string>
+    <string name="undergone_skill_development_schemes">If Yes, please select the scheme type</string>
+    <string name="is_hhd_available_a_functional_toilet">Whether the household has a functional toilets?</string>
+    <string name="mobile_numbers_hhd_members">Please provide Mobile Number to receive information on Government services/schemes</string>
+    <string name="is_hhd_availing_ration_under_nfsa_scheme">Whether the Household is availing ration under any food security/food subsidy scheme?</string>
+    <string name="nfsa_ration_card_type">If Yes, then provide status of  NFSA card type</string>
+    <string name="provide_ration_card_number">Provide the Ration Card Number</string>
+    <string name="household_availing_ration_NFSA_scheme">House hold availing ration NFSA scheme</string>
+    <string name="nfsa_scheme_type">Nfsa scheme type</string>
+    <string name="nfsa_ration_card_no">Nfsa card no.</string>
+    <string name="enter_nfsa_card_no">Enter nfsa card no</string>
+
+    <!--survey Tags-->
+    <string name="tag_tv_availabilityOfLpgConnection">tvAvailabilityOfLpgConnection</string>
+    <string name="tag_rg_availabilityOfLpgConnection">rgAvailabilityOfLpgConnection</string>
+    <string name="tag_rb_availabilityOfLpgConnectionYes">rbAvailabilityOfLpgConnectionYes</string>
+    <string name="tag_rb_availabilityOfLpgConnectionNo">rbAvailabilityOfLpgConnectionNo</string>
+    <string name="tag_tv_lpgConsumerId">tvLpgConsumerId</string>
+    <string name="tag_et_lpgConsumerId">etLpgConsumerId</string>
+    <string name="tag_tv_cylinderRefillFrequency">tvCylinderRefillFrequency</string>
+    <string name="tag_et_cylinderRefillFrequency">etCylinderRefillFrequency</string>
+    <string name="tag_ll_availabilityOfLpgConnectionYes">llAvailabilityOfLpgConnectionYes</string>
+    <string name="tag_tv_availabilityOfElectricityConnection">tvAvailabilityOfElectricityConnection</string>
+    <string name="tag_rg_availabilityOfElectricityConnection">rgAvailabilityOfElectricityConnection</string>
+    <string name="tag_rb_availabilityOfElectricityConnectionYes">rbAvailabilityOfElectricityConnectionYes</string>
+    <string name="tag_rb_availabilityOfElectricityConnectionNo">rbAvailabilityOfElectricityConnectionNo</string>
+    <string name="tag_ll_availabilityOfElectricityConnectionYes">llAvailabilityOfElectricityConnectionYes</string>
+    <string name="tag_tv_availabilityOfLedBulbsUjala">tvAvailabilityOfLedBulbsUjala</string>
+    <string name="tag_rg_availabilityOfLedBulbsUjala">rgAvailabilityOfLedBulbsUjala</string>
+    <string name="tag_rb_availabilityOfLedBulbsUjalaYes">rbAvailabilityOfLedBulbsUjalaYes</string>
+    <string name="tag_rb_availabilityOfLedBulbsUjalaNo">rbAvailabilityOfLedBulbsUjalaNo</string>
+    <string name="tag_tv_availabilityOfPmJanDhanAccount">tvAvailabilityOfPmJanDhanAccount</string>
+    <string name="tag_rg_AvailabilityOfPmJanDhanAccount">rgAvailabilityOfPmJanDhanAccount</string>
+    <string name="tag_rb_AvailabilityOfPmJanDhanAccountYes">rbAvailabilityOfPmJanDhanAccountYes</string>
+    <string name="tag_rb_AvailabilityOfPmJanDhanAccountNo">rbAvailabilityOfPmJanDhanAccountNo</string>
+    <string name="tag_tv_whetherEnrolledForPmjjy">tvWhetherEnrolledForPmjjy</string>
+    <string name="tag_rg_whetherEnrolledForPmjjy">rgWhetherEnrolledForPmjjy</string>
+    <string name="tag_rg_whetherEnrolledForPmsby">rgWhetherEnrolledForPmsby</string>
+    <string name="tag_rb_whetherEnrolledForPmsbyYes">rbWhetherEnrolledForPmsbyYes</string>
+    <string name="tag_rb_whetherEnrolledForPmsbyNo">rbWhetherEnrolledForPmsbyNo</string>
+    <string name="tag_tv_whetherEnrolledForPmsby">tvWhetherEnrolledForPmsby</string>
+    <string name="tag_rb_whetherEnrolledForPmjjyNo">rbWhetherEnrolledForPmjjyNo</string>
+    <string name="tag_rb_whetherEnrolledForPmjjyYes">rbWhetherEnrolledForPmjjyYes</string>
+    <string name="tag_tv_whetherImmunizedUnderMissionIndradhanush">tvWhetherImmunizedUnderMissionIndradhanush</string>
+    <string name="tag_rg_whetherImmunizedUnderMissionIndradhanush">rgWhetherImmunizedUnderMissionIndradhanush</string>
+    <string name="tag_rb_whetherImmunizedUnderMissionIndradhanushYes">rbWhetherImmunizedUnderMissionIndradhanushYes</string>
+    <string name="tag_rb_whetherImmunizedUnderMissionIndradhanushNo">rbWhetherImmunizedUnderMissionIndradhanushNo</string>
+    <string name="tag_tv_anyChild0To6OrPregnantWomanAvailable">tvAnyChild0To6OrPregnantWomanAvailable</string>
+    <string name="tag_rg_anyChild0To6OrPregnantWomanAvailable">rgAnyChild0To6OrPregnantWomanAvailable</string>
+    <string name="tag_rb_anyChild0To6OrPregnantWomanAvailableYes">rbAnyChild0To6OrPregnantWomanAvailableYes</string>
+    <string name="tag_rb_anyChild0To6OrPregnantWomanAvailableNo">rbAnyChild0To6OrPregnantWomanAvailableNo</string>
+    <string name="tag_ll_AnyChild0To6OrPregnantWomanAvailableYes">llAnyChild0To6OrPregnantWomanAvailableYes</string>
+    <string name="tag_ll_AnyChild0To6OrPregnantWomanAvailableNo">llAnyChild0To6OrPregnantWomanAvailableNo</string>
+    <string name="tag_tv_whetherAnyMemberRegisteredUnderIcds">tvWhetherAnyMemberRegisteredUnderIcds</string>
+    <string name="tag_rg_whetherAnyMemberRegisteredUnderIcds">rgWhetherAnyMemberRegisteredUnderIcds</string>
+    <string name="tag_rb_whetherAnyMemberRegisteredUnderIcdsYes">rbWhetherAnyMemberRegisteredUnderIcdsYes</string>
+    <string name="tag_rb_whetherAnyMemberRegisteredUnderIcdsNo">rbWhetherAnyMemberRegisteredUnderIcdsNo</string>
+    <string name="tag_tv_checkServicesUnderIcds">tvCheckServicesUnderIcds</string>
+    <string name="tag_spinner_checkServicesUnderIcds">spinnerCheckServicesUnderIcds</string>
+    <string name="tag_tv_whetherAvailedNutritionBenefirIcds">tvWhetherAvailedNutritionBenefirIcds</string>
+    <string name="tag_rg_whetherAvailedNutritionBenefirIcds">rgWhetherAvailedNutritionBenefirIcds</string>
+    <string name="tag_rb_whetherAvailedNutritionBenefirIcdsYes">rbWhetherAvailedNutritionBenefirIcdsYes</string>
+    <string name="tag_rb_whetherAvailedNutritionBenefirIcdsNo">rbWhetherAvailedNutritionBenefirIcdsNo</string>
+    <string name="tag_tv_anyMemberOfShgUnderDayNrlm">tvAnyMemberOfShgUnderDayNrlm</string>
+    <string name="tag_rg_anyMemberOfShgUnderDayNrlm">rgAnyMemberOfShgUnderDayNrlm</string>
+    <string name="tag_rb_anyMemberOfShgUnderDayNrlmYes">rbAnyMemberOfShgUnderDayNrlmYes</string>
+    <string name="tag_rb_anyMemberOfShgUnderDayNrlmNo">rbAnyMemberOfShgUnderDayNrlmNo</string>
+    <string name="tag_tv_householdType">tvHouseholdType</string>
+    <string name="tag_tv_whetherBeneficiaryOfPmayG">tvWhetherBeneficiaryOfPmayG</string>
+    <string name="tag_rg_WhetherBeneficiaryOfPmayG">rgWhetherBeneficiaryOfPmayG</string>
+    <string name="tag_rb_WhetherBeneficiaryOfPmayGYes">rbWhetherBeneficiaryOfPmayGYes</string>
+    <string name="tag_rb_WhetherBeneficiaryOfPmayGNo">rbWhetherBeneficiaryOfPmayGNo</string>
+    <string name="tag_ll_whetherBeneficiaryOfPmayGYes">llWhetherBeneficiaryOfPmayGYes</string>
+    <string name="tag_tv_provide_status_of_pmayg">tvProvideStatusOfPmayG</string>
+    <string name="tag_spinner_provideStatusOfPmayG">spinnerProvideStatusOfPmayG</string>
+    <string name="tag_tv_pmayg_id">tvPmayGId</string>
+    <string name="tag_spinner_householdType">spinnerHouseholdType</string>
+    <string name="tag_ll_householdParticularsDetails">llHouseholdParticularsDetails</string>
+    <string name="tag_iv_householdParticulars">ivHouseholdParticulars</string>
+    <string name="tag_ll_householdParticulars">llHouseholdParticulars</string>
+    <string name="tag_ll_formDetails">llFormDetails</string>
+    <string name="tag_whether_issued_ehealth_card_under_abpmjay">WhetherIssuedEHealthCardUnderAbPmjay</string>
+    <string name="tag_tv_whether_issued_ehealth_card_under_abpmjay">tvWhetherIssuedEHealthCardUnderAbPmjay</string>
+    <string name="tag_rg_whether_issued_ehealth_card_under_abpmjay">rgWhetherIssuedEHealthCardUnderAbPmjay</string>
+    <string name="tag_rb_whether_issued_ehealth_card_under_abpmjay_yes">rbWhetherIssuedEHealthCardUnderAbPmjayYes</string>
+    <string name="tag_rb_whether_issued_ehealth_card_under_abpmjay_no">rbWhetherIssuedEHealthCardUnderAbPmjayNo</string>
+    <string name="tag_ll_whether_issued_ehealth_card_under_abpmjay_yes">llWhetherIssuedEHealthCardUnderAbPmjayYes</string>
+    <string name="tag_tv_family_health_card_no">tvFamilyHealthCardNo</string>
+    <string name="tag_et_family_health_card_no">etFamilyHealthCardNo</string>
+    <string name="tag_tv_whether_any_member_getting_pension_nsap">tvWhetherAnyMemberGettingPensionNsap</string>
+    <string name="tag_rg_whether_any_member_getting_pension_nsap">rgWhetherAnyMemberGettingPensionNsap</string>
+    <string name="tag_rb_whether_any_member_getting_pension_nsap_yes">rbWhetherAnyMemberGettingPensionNsapYes</string>
+    <string name="tag_rb_whether_any_member_getting_pension_nsap_no">rbWhetherAnyMemberGettingPensionNsapNo</string>
+    <string name="tag_ll_whether_any_member_getting_pension_nsap_yes">llWhetherAnyMemberGettingPensionNsapYes</string>
+    <string name="tag_tv_select_pension">tvSelectPension</string>
+    <string name="tag_spinner_pension">spinnerPension</string>
+    <string name="tag_tv_whether_any_member_wotked_with_mgnrega">tvWhetherAnyMemberWorkedWithMgnrega</string>
+    <string name="tag_rg_whether_any_member_worked_with_mgnrega">rgWhetherAnyMemberWorkedWithMgnrega</string>
+    <string name="tag_rb_whether_any_member_worked_with_mgnrega_yes">rbWhetherAnyMemberWorkedWithMgnregaYes</string>
+    <string name="tag_rb_whether_any_member_worked_with_mgnrega_no">rbWhetherAnyMemberWorkedWithMgnregaNo</string>
+    <string name="tag_ll_whether_any_member_worked_with_mgnrega_yes">llWhetherAnyMemberWorkedWithMgnregaYes</string>
+    <string name="tag_tv_mgnrega_job_card_no">tvMgnregaJobCardNo</string>
+    <string name="tag_tv_no_days_worked_with_mgnrega_last_year">tvNoDaysWorkedWithMgnregaInLastYear</string>
+    <string name="tag_et_no_days_worked_with_mgnrega_last_year">etNoDaysWorkedWithMgnregaInLastYear</string>
+    <string name="tag_et_mgnrega_job_card_no">etMgnregaJobCardNo</string>
+    <string name="tag_tv_whether_any_member_undergone_training_under_skill_dev_scheme">tvWhetherAnyMemberUndergoneTrainingInSkillDevScheme</string>
+    <string name="tag_rg_whether_any_member_undergone_training_under_skill_dev_scheme">rgWhetherAnyMemberUndergoneTrainingInSkillDevScheme</string>
+    <string name="tag_rb_whether_any_member_undergone_training_under_skill_dev_scheme_yes">rbWhetherAnyMemberUndergoneTrainingInSkillDevSchemeYes</string>
+    <string name="tag_rb_whether_any_member_undergone_training_under_skill_dev_scheme_no">rbWhetherAnyMemberUndergoneTrainingInSkillDevSchemeNo</string>
+    <string name="tag_ll_whether_any_member_undergone_training_under_skill_dev_scheme_yes">llWhetherAnyMemberUndergoneTrainingInSkillDevSchemeYes</string>
+    <string name="tag_tv_skill_dev_scheme_type">tvSkillDevSchemeType</string>
+    <string name="tag_spinner_skill_dev_scheme_type">spinnerSkillDevSchemeType</string>
+    <string name="tag_tv_Whethere_household_has_functional_toilets">tvWhetherHouseHoldhasFunctionalToilets</string>
+    <string name="tag_rg_Whethere_household_has_functional_toilets">rgWhetherHouseHoldhasFunctionalToilets</string>
+    <string name="tag_rb_Whethere_household_has_functional_toilets_yes">rbWhetherHouseHoldhasFunctionalToiletsYes</string>
+    <string name="tag_rb_Whether_house_hold_has_functional_toilets_No">rbWhetherHouseHoldhasFunctionalToiletsNo</string>
+    <string name="tag_l1_Whether_house_hold_has_functional_toilets">llWhetherHouseHoldhasFunctionalToilets</string>
+    <string name="tag_tv_house_hold_mobile_no">tvHouseHoldMobileNO.</string>
+    <string name="tag_et_house_hold_mobile_no">etHouseHoldMobileNO.</string>
+    <string name="et_house_hold_mobile_no">etHouseHoldMobileNO.</string>
+    <string name="tag_tv_Whether_house_hold_availing_ration_nfsa_scheme">tvWhetherHouseHoLdAvailingRationNfsaScheme</string>
+    <string name="tag_rg_Whethere_house_hold_has_ration_card">rgWhetherHouseHoldRationCard</string>
+    <string name="tag_rb_Whether_house_hold_has_ration_card_yes">rbWhetherHouseHoLdRationCardYes</string>
+    <string name="tag_rb_Whether_house_hold_has_ration_card_no">rbWhetherHouseHoLdRationCardNo</string>
+    <string name="tag_l1_Whether_house_hold_nfsa_scheme_Yes">llWhetherHouseHoldNfsaSchemeYes</string>
+    <string name="tag_tv_nfsa_ration_card_type">tvNfsaCardType</string>
+    <string name="tag_spinner_nfsa_ration_card_type">SpinnerNfsaSchemeType</string>
+    <string name="tag_tv_nfsa_ration_card_no">tvRationCardno</string>
+    <string name="tag_et_nfsa_ration_card_no">etRationCardno</string>
+    <string name="tag_btn_saveProceedSectionLocParam">btnSaveProceedSectionLocParam</string>
+    <string name="tag_ll_submitSectionLocParam">llSubmitSectionLocParam</string>
+    <string name="tag_tv_pincodeBaseData">tvPincodeBaseData</string>
+    <string name="tag_tv_pincodeBase">tvPincodeBase</string>
+    <string name="tag_ll_pincodeBase">llPincodeBase</string>
+    <string name="tag_et_pincode">etPincode</string>
+    <string name="tag_tv_pincode">tvPincode</string>
+    <string name="tag_tv_ebData">tvEbData</string>
+    <string name="tag_tv_eb">tvEb</string>
+    <string name="tag_tv_villageData">tvVillageData</string>
+    <string name="tag_tv_village">tvVillage</string>
+    <string name="tag_tv_gpData">tvGpData</string>
+    <string name="tag_tv_gp">tvGp</string>
+    <string name="tag_tv_blockData">tvBlockData</string>
+    <string name="tag_tv_block">tvBlock</string>
+    <string name="tag_tv_districtData">tvDistrictData</string>
+    <string name="tag_tv_district">tvDistrict</string>
+    <string name="tag_tv_stateData">tvStateData</string>
+    <string name="tag_tv_state">tvState</string>
+    <string name="tag_iv_locationParameters">ivLocationParameters</string>
+    <string name="tag_ll_locationParameters">llLocationParameters</string>
+    <string name="tag_ll_locationParametersDetails">llLocationParametersDetails</string>
+    <string name="tag_ll_submitSectionA_1">llSubmitSectionA_1</string>
+    <string name="tag_btn_saveProceedSectionA_1">btnSaveProceedSectionA_1</string>
+    <string name="tag_ll_submitBtn">llSubmitBtn</string>
+    <string name="tag_btn_saveDraftGp">btnSaveDraftGp</string>
+    <string name="tag_btn_submitGpData">btnSubmitGpData</string>
+    <string name="tag_l1_Whether_house_hold_availing_nfsa_scheme_Yes">llWhetherHouseHoldAvailingNfsaSchemeYes</string>
+    <string name="tag_et_pmayGid">etPmayGId</string>
+    <string name="tag_et_pmayg_id">etPmayGId</string>
+    <string name="search_by_hhd_id">Household Id</string>
+
+    <string name="tag_tv_availabilityOfPmJanDhanAccount_data">tvAvailabilityOfPmJanDhanAccountData</string>
+    <string name="tag_tv_availabilityOfLpgConnection_data">tvAvailabilityOfLpgConnectionData</string>
+    <string name="tag_tv_whetherEnrolledForPmjjy_data">tvWhetherEnrolledForPmjjyData</string>
+    <string name="tag_tv_whetherEnrolledForPmsby_data">tvWhetherEnrolledForPmsbyData</string>
+    <string name="tag_tv_whetherImmunizedUnderMissionIndradhanush_data">tvWhetherImmunizedUnderMissionIndradhanushData</string>
+    <string name="tag_tv_anyMemberOfShgUnderDayNrlm_data">tvAnyMemberOfShgUnderDayNrlmData</string>
+    <string name="tag_tv_whether_any_member_undergone_training_under_skill_dev_scheme_data">tvWhetherAnyMemberUndergoneTrainingUnderSkillDevSchemeData</string>
+    <string name="tag_tv_skill_dev_scheme_type_data">tvSkillDevSchemeTypeData</string>
+    <string name="tag_tv_Whethere_household_has_functional_toilets_data" >tvWhethereHouseholdHasFunctionalToiletsData</string>
+    <string name="tag_tv_Whether_house_hold_availing_ration_nfsa_scheme_data">tvWhetherHouseholdAvailingRationNfsaSchemeData</string>
+    <string name="tag_tv_nfsa_ration_card_type_data">tvNfsaRationCardTypeData</string>
+    <string name="tag_tv_availabilityOfElectricityConnection_data">tvAvailabilityOfElectricityConnectionData</string>
+    <string name="tag_tv_anyChild0To6OrPregnantWomanAvailable_data">tvAnyChild0To6OrPregnantWomanAvailableData</string>
+    <string name="tag_tv_checkServicesUnderIcds_data">tvCheckServicesUnderIcdsData</string>
+    <string name="tag_tv_whetherAvailedNutritionBenefirIcds_data">tvWhetherAvailedNutritionBenefirIcdsData</string>
+    <string name="tag_tv_whetherBeneficiaryOfPmayG_data">tvWhetherBeneficiaryOfPmayGData</string>
+    <string name="tag_tv_whether_issued_ehealth_card_under_abpmjay_data">tvWhetherIssuedEhealthcardunderbpmjayData</string>
+    <string name="tag_tv_whether_any_member_getting_pension_nsap_data">tvWhetherAnymembergettingPensionNsapData</string>
+    <string name="tag_tv_whether_any_member_wotked_with_mgnrega_data">tvWhetherAnymemberwotkedwithMgnregaData</string>
+    <string name="tag_tv_provide_status_of_pmayg_data">tvProvideStatusofPmaygData</string>
+    <string name="tag_tv_lpgConsumerId_data">tvLpgConsumerIdData</string>
+    <string name="tag_tv_cylinderRefillFrequency_data">tvCylinderRefillFrequencyData</string>
+    <string name="tag_tv_householdType_data">tvHouseholdTypeData</string>
+    <string name="tag_tv_pmaygid_data">tvPmaygidData</string>
+    <string name="tag_tv_family_health_card_no_data">tvFamilyHealthCardnoData</string>
+    <string name="tag_tv_select_pension_data">tvSelectPensionData</string>
+    <string name="tag_tv_mgnrega_job_card_no_data">tvMgnregajobCardnoData</string>
+    <string name="tag_tv_no_days_worked_with_mgnrega_last_year_data">tvNodaysWorkedWithMgnregalastyearData</string>
+    <string name="tag_tv_house_hold_mobile_no_data">tvHouseholdmobilenoData</string>
+    <string name="tag_tv_nfsa_ration_card_no_data">tvNfsaRationCardnoData</string>
+
+    <string name="search_msg_base_data_empty">No base data exist for this village.</string>
+
+    <string name="hhd_id">Household Id</string>
+    <string name="enter_hhd_id">Enter Household Id</string>
+    <string name="pending_household">Pending Households</string>
+    <string name="select_yob">-- Select Yob --</string>
+    <string name="spinner_heading_nfsa_ration_card_type">-- Select Nfsa Ration card type --</string>
+    <string name="spinner_heading_pmayg_status">-- Select Pmayg Status --</string>
+    <string name="spinner_heading_services_availed_under_icds">-- Select services availed under ICDS --</string>
+    <string name="spinner_heading_type_of_house_used_for_living">--Select type of household used for living--</string>
+    <string name="spinner_heading_type_of_pension">--Select type of pension--</string>
+    <string name="spinner_heading_uncovered_hhd_reason">--Select uncovered household reason--</string>
+    <string name="spinner_heading_undergone_sill_dev_schemes">--Select undergone skill dev schemes--</string>
+    <string name="mark_village_part_complete_confirmation">Do you really want to mark the enumerated block as completed ??</string>
+    <string name="pending_household_for_survey">Kindly comlpete the pending households to mark the village part completed.</string>
+    <string name="incomplete_household">Kindly finally submit the pending households to mark the village completed</string>
+    <string name="mark_complete_msg_failure">Some error occurred while marking the enumerated block complete. \\n Kindly try again</string>
+    <string name="select_enum_block">Please select Enumerated block</string>
+    <string name="base_data_already_downloaded">Base data is already downloaded on your device.</string>
+    <string name="tag_tv_availabilityOfLedBulbsUjala_data">tvAvailabilityOfLedBulbsUjalaData</string>
+    <string name="tag_tv_whetherAnyMemberRegisteredUnderIcds_data">tvWhetherAnyMemberRegisteredUnderIcdsData</string>
+    <string name="home_option_mark_village_part_complete">Mark Completion Status</string>
+    <string name="enum_block">Enumerated Block</string>
+    <string name="tag_chkNutritionSupplement">chkNutritionSupplement</string>
+    <string name="tag_chkHealth">chkHealth</string>
+    <string name="tag_chkPreSchoolEducation">chkPreSchoolEducation</string>
+    <string name="nutrition_supplement">Nutrition Supplement</string>
+    <string name="health">Health</string>
+    <string name="pre_school_education">Pre School Education</string>
+
+    <string name="tag_chkOldAge">chkOldAge</string>
+    <string name="tag_chkWidow">chkWidow</string>
+    <string name="tag_chkDisability">chkDisability</string>
+    <string name="tag_chkNone">chkNone</string>
+
+
+    <string name="old_age">Old Age</string>
+    <string name="widow">Widow</string>
+    <string name="disability">Disability</string>
+
+
+    <string name="tag_chkDDUGKY">idDdugky</string>
+    <string name="tag_chkPMKVY">idPmkvy</string>
+    <string name="tag_chkPMEGP">idPmegp</string>
+    <string name="tag_chkAnyOther">idAnyOther</string>
+    <string name="tag_chkNo">idNo</string>
+
+    <string name="ddugky">DDUGKY-Deen Dayal Upadhyay Gramin Kaushal Yojana</string>
+    <string name="pmkvy">PMKVY-Pradhan Mantri Kaushal Vikas Yojana</string>
+    <string name="pmegp">PMEGP-Pradhan Mantri Employment Generation Programme</string>
+    <string name="any_other">Any Other </string>
+
+    <!--- New Strings -->
+
+    <string name="tag_spinner_lpgConnectionAvailability">spinnerLpgConnectionAvailability</string>
+    <string name="tag_ll_availabilityOfLpgConnectionNo">llAvailabilityOfLpgConnectionNo</string>
+    <string name="tag_tv_lpgGasConnectionApplied">tvLpgGasConnectionApplied</string>
+    <string name="lpg_gas_connection_applied">Please select the option</string>
+    <string name="tag_spinner_lpgGasConnectionApplied">spinnerLpgGasConnectionApplied</string>
+    <string name="tag_spinner_availabilityOfLedBulbsUjala">spinnerAvailabilityOfLedBulbsUjala</string>
+    <string name="tag_spinner_availabilityOfPmJanDhanAccount">spinnerAvailabilityOfPmJanDhanAccount</string>
+    <string name="whether_hhd_has_insurance_cover">Whether any member of the  household has life insurance cover?</string>
+    <string name="tag_tv_WhetherHhdHasInsuranceCover">tvWhetherHhdHasInsuranceCover</string>
+    <string name="tag_spinner_WhetherHhdHasInsuranceCover">spinnerWhetherHhdHasInsuranceCover</string>
+    <string name="whether_hhd_has_accidental_insurance_cover">Whether any member of the  household has accidental insurance cover?</string>
+    <string name="tag_tv_WhetherHhdHasAccidentalInsuranceCover">tvWhetherHhdHasAccidentalInsuranceCover</string>
+    <string name="tag_spinner_whetherHhdHasAccidentalInsuranceCover">spinnerWhetherHhdHasAccidentalInsuranceCover</string>
+    <string name="whether_any_member_of_hhd_immunised">whether any member of the household has been immunised ? </string>
+    <string name="tag_tv_whetherAnyMemberOfHhdImmunised">tvWhetherAnyMemberOfHhdImmunised</string>
+    <string name="tag_spinner_whetherAnyMemberOfHhdImmunised">spinnerWhetherAnyMemberOfHhdImmunised</string>
+
+    <string name="whether_nutrition_supplement_services_availed">Whether Nutrition Supplement services availed?</string>
+    <string name="tag_tv_whetherNutritionSupplementServicesAvailed">tvWhetherNutritionSupplementServicesAvailed</string>
+    <string name="tag_spinner_whetherNutritionSupplementServicesAvailed">spinnerWhetherNutritionSupplementServicesAvailed</string>
+
+    <string name="whether_health_services_availed">Whether Health services availed?</string>
+    <string name="tag_tv_whetherHealthServicesAvailed">tvWhetherHealthServicesAvailed</string>
+    <string name="tag_spinner_whetherHealthServicesAvailed">spinnerWhetherHealthServicesAvailed</string>
+
+    <string name="whether_pre_school_education_services_availed">Whether pre school education services availed?</string>
+    <string name="tag_tv_whetherPreSchoolEducationServicesAvailed">tvWhetherPreSchoolEducationServicesAvailed</string>
+    <string name="tag_spinner_whetherPreSchoolEducationServicesAvailed">spinnerWhetherPreSchoolEducationServicesAvailed</string>
+
+    <string name="whether_any_member_of_hhd_is_member_of_shg">Whether any member of the household is a member of the Self Help Group (SHG)</string>
+    <string name="tag_tv_whetherAnyMemberOfHhdMemberOfShg">tvWhetherAnyMemberOfHhdMemberOfShg</string>
+    <string name="tag_spinner_whetherAnyMemberOfHhdMemberOfShg">spinnerWhetherAnyMemberOfHhdMemberOfShg</string>
+
+
+    <string name="whether_hhd_beneficiary_of_govthousing">Whether the household is a beneficiary of any Government Housing Scheme?</string>
+    <string name="tag_tv_whetherHhdBeneficiaryOfGovthousing">tvWhetherHhdBeneficiaryOfGovthousing</string>
+    <string name="tag_spinner_whetherHhdBeneficiaryOfGovthousing">spinnerWhetherHhdBeneficiaryOfGovthousing</string>
+
+    <string name="tag_ll_whetherBeneficiaryOfPmayGNo">llWhetherBeneficiaryOfPmayGNo</string>
+
+    <string name="whether_hhd_beneficiary_of_govthousing_no">If, No</string>
+    <string name="tag_tv_whetherHhdBeneficiaryOfGovthousingNo">tvWhetherHhdBeneficiaryOfGovthousingNo</string>
+    <string name="tag_spinner_whetherHhdBeneficiaryOfGovthousingNo">spinnerWhetherHhdBeneficiaryOfGovthousingNo</string>
+
+    <string name="whether_hhd_registered_health_scheme">Whether the household is registeresd in any health scheme?</string>
+    <string name="tag_tv_WhetherHhdRegisteredHealthScheme">tvWhetherHhdRegisteredHealthScheme</string>
+    <string name="tag_spinner_WhetherHhdRegisteredHealthScheme">spinnerWhetherHhdRegisteredHealthScheme</string>
+    <string name="type_of_scheme">Please select the scheme type</string>
+
+    <string name="tag_spinner_WhetherHouseHoldAvailingRationNFSAScheme">spinnerWhetherHouseHoldAvailingRationNFSAScheme</string>
+
+    <string name="mobile_no_belogs_to">Mobile Number for Contact belongs to</string>
+    <string name="tag_tv_MobileNoBelogsTo">tvMobileNoBelogsTo</string>
+    <string name="tag_spinner_MobileNoBelogsTo">spinnereMobileNoBelogsTo</string>
+
+
+
+    <string name="whether_old_age_select_scheme">If Old Age, Select the pension scheme</string>
+    <string name="tag_tv_whetherOldAgeSelectScheme">tvWhetherOldAgeSelectScheme</string>
+    <string name="tag_spinner_whetherOldAgeSelectScheme">spinnerWhetherOldAgeSelectScheme</string>
+
+    <string name="whether_widow_age_select_scheme">If Widow, Select the pension scheme</string>
+    <string name="tag_tv_whetherWidowAgeSelectScheme">tvWhetherWidowAgeSelectScheme</string>
+    <string name="tag_spinner_whetherWidowAgeSelectScheme">spinnerWhetherWidowAgeSelectScheme</string>
+
+
+    <string name="whether_disability_age_select_scheme">If Disability, Select the pension scheme</string>
+    <string name="tag_tv_whetherDisabilityAgeSelectScheme">tvWhetherDisabilitySelectScheme</string>
+    <string name="tag_spinner_whetherDisabilityAgeSelectScheme">spinnerWhetherDisabilitySelectScheme</string>
+
+    <string name="whether_any_member_worked_with_mgnrega_no">If No,</string>
+    <string name="tag_tv_WhetherAnyMemberWorkedWithMgnregaNo">tvWhetherAnyMemberWorkedWithMgnregaNo</string>
+    <string name="tag_spinner_WhetherAnyMemberWorkedWithMgnregaNo">spinnerWhetherAnyMemberWorkedWithMgnregaNo</string>
+    <string name="tag_ll_whether_any_member_worked_with_mgnrega_no">llWhetherAnyMemberWorkedWithMgnregaNo</string>
+
+    <string name="spinner_heading_select_option">-- Select Option --</string>
+
+    <string name="tag_ll_WhetherOldAgeSelectSchemeYes">llWhetherOldAgeSelectSchemeYes</string>
+    <string name="tag_ll_WhetherWidowAgeSelectSchemeYes">llWhetherWidowAgeSelectSchemeYes</string>
+    <string name="tag_ll_WhetherDisabilitySelectSchemeYes">llWhetherDisabilitySelectSchemeYes</string>
+
+
+
+
+</resources>

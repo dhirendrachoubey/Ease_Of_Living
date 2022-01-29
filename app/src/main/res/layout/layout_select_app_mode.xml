@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/layout_round_corner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/select_spp_mode"/>
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_close"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/et_style"
+        android:padding="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="vertical"
+            >
+            <RadioButton
+                android:id="@+id/rbTraining"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/training_mode"
+                android:layout_weight="1"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rbActual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/actual_mode"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="100dp"
+        style="@style/buttonBlue"
+        android:text="@string/continues"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

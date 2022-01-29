@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/layout_round_corner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="3dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/change_gp"/>
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_close"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="1.5dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/tvDb_roles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/db_l"
+        android:textColor="@color/blue"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/et_style"
+        android:padding="5dp"
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spinnerDbRole"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvGP_roles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/gp"
+        android:textColor="@color/blue"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/et_style"
+        android:padding="5dp"
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spinnerGpRole"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="100dp"
+        style="@style/buttonBlue"
+        android:text="@string/continues"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

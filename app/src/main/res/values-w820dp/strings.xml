@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="upload_scanned_survey">Upload scanned survey form</string>
+    <string name="str_service_unavailable">Application could not connect with the server due to poor network or connectivity of your service provider.</string>
+</resources>

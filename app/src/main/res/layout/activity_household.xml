@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.HouseholdData"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Header Starts-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/household_data"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Header Ends-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/et_style"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="@string/village"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/aadhaar_status" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- HouseholdUpdated Detail layout Starts-->
+
+        <!-- Section Address layout Starts-->
+        <LinearLayout
+            android:id="@+id/llSectionAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivSectionAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_minus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/section_address"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSectionAddressDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/tvAddressLine1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/housenumber"
+                android:textColor="@color/blue"/>
+
+            <EditText
+                android:id="@+id/etAddressLine1"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/housenumber"
+                android:inputType="text"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvAddressLine2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/streetname"
+                android:textColor="@color/blue"/>
+
+            <EditText
+                android:id="@+id/etAddressLine2"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/streetname"
+                android:inputType="text"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvAddressLine3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/landmark"
+                android:textColor="@color/blue"/>
+
+            <EditText
+                android:id="@+id/etAddressLine3"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/landmark"
+                android:inputType="text"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvAddressLine4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/state"
+                android:textColor="@color/blue"/>
+
+            <!--<EditText
+                android:id="@+id/etAddressLine4"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/address_line_4"
+                android:inputType="text"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerState"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:prompt="@string/state" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAddressLine5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/district"
+                android:textColor="@color/blue"/>
+
+            <!--<EditText
+                android:id="@+id/etAddressLine5"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/address_line_5"
+                android:inputType="text"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:prompt="@string/district" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPincode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/pincode"
+                android:textColor="@color/blue"/>
+
+            <EditText
+                android:id="@+id/etPincode"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/pincode"
+                android:maxLength="6"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Section Address layout Ends-->
+
+        <!-- Section1 Detail layout Starts-->
+        <LinearLayout
+            android:id="@+id/llSection1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivSection1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/section1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSection1_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="@color/white">
+           <!-- <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="@string/section1"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/tvHousehold_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/household_type"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerHousehold_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/household_type" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llHouse_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvMaterial_of_wall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left|center"
+                            android:text="@string/materialofwall"
+                            android:textColor="@color/blue"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/et_style"
+                            android:padding="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinnerMaterial_of_wall"
+                                android:layout_width="match_parent"
+                                android:prompt="@string/materialofwall"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                            </Spinner>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvMaterial_of_roof"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left|center"
+                            android:text="@string/materialofroof"
+                            android:textColor="@color/blue"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/et_style"
+                            android:padding="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Spinner
+                                android:id="@+id/spinnerMaterial_of_roof"
+                                android:layout_width="match_parent"
+                                android:prompt="@string/materialofroof"
+                                android:layout_height="match_parent">
+                            </Spinner>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvOwner_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/ownership_status"
+                            android:textColor="@color/blue"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/et_style"
+                            android:layout_marginBottom="5dp"
+                            android:padding="5dp"
+                            android:gravity="center"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <Spinner
+                                android:id="@+id/spinnerOwnership_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:prompt="@string/ownership_status" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/tvNo_of_dweeling_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/dwelling_rooms"
+                            android:textColor="@color/blue"/>
+                        <EditText
+                            android:id="@+id/etNo_of_dweeling_room"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/et_style"
+                            android:hint="@string/dwelling_rooms"
+                            android:maxLength="3"
+                            android:inputType="number"
+                            android:layout_height="40dp"
+                            android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSheltersLess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sheltersless"
+                android:textColor="@color/blue"
+                android:visibility="gone"/>
+
+
+            <RadioGroup
+                android:id="@+id/rgSheltersLess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/rbSheltersLessYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbSheltersLessNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Basic_facilities layout Ends-->
+        <!-- Income Source Detail layout Starts-->
+        <LinearLayout
+            android:id="@+id/llIncome_source"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivIncome_source"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/income_source"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llIncome_source_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvIncome_source"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/main_source_household"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerIncome_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/main_source_household" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Section1 Detail layout Ends-->
+
+        <!-- Basic Facilities Detail layout Starts-->
+
+        <LinearLayout
+            android:id="@+id/llBasic_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivBasic_facilities"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/basic_facilities"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBasic_facilities_Detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPiped_drinking_water"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/piped_drinking_water"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerPiped_drinking_water"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/piped_drinking_water" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvLatrine_facility"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/latrine_facility"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerLatrine_facility"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/latrine_facility" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvMain_sourceoflighting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/main_source_of_lighting"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerMain_sorce_of_lighting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/main_source_of_lighting" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSeprateRoomAskitchen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/seprate_room_as_kitchen"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbSeprateRoomAskitchenYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbSeprateRoomAskitchenNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvFuel_used_for_cooking"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/fuel_used"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerFuel_used_for_cooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/fuel_used" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvDrainage_facility"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/drainage_facility"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerDrainage_facility"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/drainage_facility" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvHouse_connected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/house_connected"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbHouse_connect_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbHouse_connect_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvOutside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/outside"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:id="@+id/rgOutside_rode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbOutside_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbOutside_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvPost_office"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/postoffice_availability"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPostoffice_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbPostoffice_not_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tvHave_ration_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/have_ration_card"
+                android:textColor="@color/blue"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerRation_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:prompt="@string/household_type" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvRation_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/ration_card_no"
+                android:textColor="@color/blue"/>
+
+            <EditText
+                android:id="@+id/etRation_card_no"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:longClickable="false"
+                android:hint="@string/ration_card_no"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Rationcard Detail layout Ends-->
+
+        <!-- Other house Detail layout Starts-->
+        <LinearLayout
+            android:id="@+id/llOther_house"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivOther_house"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/other_house"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOther_house_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCentre_accessible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/centre_accessible"
+                android:textColor="@color/blue"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbCentre_accessible_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbCentre_accessible_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvChildren_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/children_registration"
+                android:textColor="@color/blue"/>
+
+            <RadioGroup
+                android:id="@+id/rgCildren_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbchildren_registration_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbchildren_registration_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/llSection4a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivSection4a"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/section4"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSection4aDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMobile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/mobile_phone"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerTelephone_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/mobile_phone" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvHousehold_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:text="@string/household_contact"
+                android:textColor="@color/blue"/>
+            <EditText
+                android:id="@+id/etHousehold_contact"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/et_style"
+                android:hint="@string/household_contact"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvRefrigerator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/refrigerator"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbRefrigerator_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbRefrigerator_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvAi_conditioners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/air_conditioner"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAc_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbAc_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvWashing_machine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/washing_machine"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbWm_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbWm_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvSmartphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/smartphone"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbSmartphone_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbSmartphone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvComputerLaptop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/computer_laptop"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCoputerLaptopYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbCoputerLaptopNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/tvVehicle_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicle_registration"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_style"
+                android:padding="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerRegistred"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/aadhaar_status" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Other House Detail layout Ends-->
+        <!-- Sectiopn 4b Detail layout starts-->
+        <LinearLayout
+            android:id="@+id/llSection4b"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivSection4b"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/section4b"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSection4bDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAgriculture_loan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/agriculture_loan"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:id="@+id/rgAgriculture_loan">
+
+                <RadioButton
+                    android:id="@+id/rbAgriculture_loan_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbAgriculture_loan_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvRangeof_liability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="@string/range_of_liability"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:id="@+id/llRangege_of_liability"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:background="@drawable/et_style"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerRangeof_liability"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:prompt="@string/range_of_liability" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/tvAgriculture_loan_waiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/agriculture_loan_waiver"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAgriculture_loan_waiver_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbAgriculture_loan_waiver_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- Sectiopn 5a Detail layout starts-->
+        <LinearLayout
+            android:id="@+id/llSection5a"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivSection5a"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/section5a"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSection5aDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAny_own_land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/own_land"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAny_own_land_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbAny_own_land_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/llOwn_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvTotal_unirrigatedland"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/unirrigatedland"
+                    android:textColor="@color/blue"/>
+                <EditText
+                    android:id="@+id/etTotal_unirrigatedland"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/et_style"
+                    android:hint="@string/unirrigatedland"
+                    android:longClickable="false"
+                    android:inputType="numberDecimal"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvWith_assured_irrigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/with_assured_irrigation"
+                    android:textColor="@color/blue"/>
+                <EditText
+                    android:id="@+id/etWith_assured_irrigation"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/et_style"
+                    android:hint="@string/with_assured_irrigation"
+                    android:inputType="numberDecimal"
+                    android:longClickable="false"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvOther_irrigated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/other_irrigated"
+                    android:textColor="@color/blue"/>
+                <EditText
+                    android:id="@+id/etOther_irrigated"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/et_style"
+                    android:hint="@string/other_irrigated"
+                    android:longClickable="false"
+                    android:inputType="numberDecimal"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <!-- Sectiopn 5b Detail layout starts-->
+        <LinearLayout
+            android:id="@+id/llSection5b"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivSection5b"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/section5b"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSection5bDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvMae_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mechanized_aggri_equipment"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbMae_tractor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tractor"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbMae_thrasher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/thrasher"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbMae_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/others"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbMae_none"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/none"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/tvIrrigation_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/irrigation_euipment"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbIrrigation_equipment_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbIrrigation_equipment_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvKisan_credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kisan_credit_card"
+                android:textColor="@color/blue"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbKisan_card_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbKisan_card_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+        <!-- NFSA  layout starts-->
+    <LinearLayout
+        android:id="@+id/llNFSA"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivNFSA"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_plus"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:textColor="@color/blue"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="@string/nfsa"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNFSADetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvFree_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/getting_free_meal"
+            android:textColor="@color/blue"/>
+
+
+        <RadioGroup
+            android:id="@+id/rgFree_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbFree_meal_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/yes"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbFree_meal_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvNutritional_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/nutritional_support"
+            android:textColor="@color/blue"/>
+        <RadioGroup
+            android:id="@+id/rgNutritional_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbNutritional_support_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/yes"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbNutritional_support_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no"
+                android:layout_weight="1"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tvAanganwadi_nutritional_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/aanganwadi_nutritional_support"
+            android:textColor="@color/blue"/>
+        <RadioGroup
+            android:id="@+id/rgAanganwadi_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAanganwadi_support_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/yes"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbAanganwadi_support_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no"
+                android:layout_weight="1"/>
+        </RadioGroup>
+    <TextView
+            android:id="@+id/tvMidday_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/midday_mealpport"
+            android:textColor="@color/blue"/>
+        <RadioGroup
+            android:id="@+id/rgMidday_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMidday_meal_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/yes"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbMidday_meal_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no"
+                android:layout_weight="1"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tvFood_gain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/food_gain"
+            android:textColor="@color/blue"/>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/et_style"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbFood_gain_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/yes"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/rbFood_gain_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <!-- NFSA layout Ends-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/llOthers"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_plus"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="@string/others_section"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOthersDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPrimitiveTribalGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/primtive_tribal_group"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPrimitiveTribalGroupYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbPrimitiveTribalGroupNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvLegallyReleasedBondedLabour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/legally_released_bonded_labour"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbLegallyReleasedBondedLabourYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbLegallyReleasedBondedLabourNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+
+            <TextView
+                android:id="@+id/tvManualScavenger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/manual_scavenger"
+                android:textColor="@color/blue"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/et_style"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbManualScavengerYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/yes"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/rbManualScavengerNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/no"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="100dp"
+            style="@style/buttonBlue"
+            android:text="@string/submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</ScrollView>
